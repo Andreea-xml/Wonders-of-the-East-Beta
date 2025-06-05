@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+   <fileDesc>
+      <titleStmt>
+         <title>Wonders of the East (Beta Version)</title>
+      <respStmt>
+         <resp></resp>
+            <name>Andreea M. Toma</name>
+        
+      </respStmt> 
+      </titleStmt>
+      <publicationStmt>
+         <p>MA draft project</p>
+      </publicationStmt>
+      <sourceDesc>
+         <msDesc>
+            <msIdentifier>
+               <settlement>London</settlement>
+               <repository>British Library</repository>
+               <idno>MS Cotton Vitellius A.xv</idno>
+            </msIdentifier>
+            <msContents>
+               <msItem> 
+                  <title xml:lang="oe">MS Cotton Vitellius A.xv</title>
+               </msItem>
+                <msItem><p><hi rend="italic">The Passion of Saint Christopher</hi>, <hi rend="italic">The Wonders of the East</hi> (illustrated), <hi rend="italic">The Letter of Alexander the Great to Aristotle</hi>, <hi rend="italic">Beowulf</hi>, and the <hi rend="italic">Judith</hi> fragment.</p>
+               </msItem></msContents>
+            
+            <physDesc>
+              <objectDesc><p>Parchment manuscript, 118 folios. For further details, see Ker, N. R. <hi rend="italic">Catalogue of manuscripts containing Anglo-Saxon</hi>, Oxford, 1957.</p>
+                  <p>Vitellius A. xv is written in two scribal stints. The two scribes are contemporary with one another, but dissimilar in character, (2) being a late type of square Anglo-Saxon minuscule and (1) a smaller, more pointed and delicate script, influenced by Caroline minuscule.</p>
+                  </objectDesc>
+            </physDesc>
+         </msDesc>
+      </sourceDesc>
+   </fileDesc>
+      <encodingDesc>
+        <editorialDecl>
+           <p>Diplomatic and interpretative edition, with a special focus on the illustrations accompanying the text.</p>
+       <correction>The illegible parts due to fire damage will be added from the Tiberius Old English version.<p/>
+       </correction>
+           <normalization><p>Modern puntctuation and capitalisation has been editorially added. Words have been separated or united after being transcribed from scriptio continua.</p>
+           </normalization>
+        </editorialDecl>
+  <charDecl>
+    <glyph xml:id="slong">
+      <glyphName>LATIN SMALL LETTER LONG S</glyphName>
+      <mapping type="codepoint">U+017F</mapping>
+      <mapping type="diplomatic">ſ</mapping>
+      <mapping type="normalized">s</mapping>
+    </glyph> 
+    <glyph xml:id="rlong">
+      <glyphName>LATIN SMALL LETTER INSULAR R</glyphName>
+      <mapping type="codepoint">U+A783</mapping>
+      <mapping type="diplomatic">ꞃ</mapping>
+      <mapping type="normalized">r</mapping>
+    </glyph>
+    <glyph xml:id="wynn">
+      <glyphName>LATIN LETTER WYNN</glyphName>
+      <mapping type="codepoint">U+01BF</mapping>
+      <mapping type="diplomatic">ƿ</mapping>
+      <mapping type="normalized">w</mapping>
+    </glyph>
+     <glyph xml:id="gins">
+      <glyphName>LATIN SMALL LETTER INSULAR G</glyphName>
+      <mapping type="codepoint">U+1D79</mapping>
+      <mapping type="diplomatic">ᵹ</mapping>
+      <mapping type="normalized">g</mapping>
+    </glyph>
+    <glyph xml:id="ond">
+      <glyphName>TIRONIAN SIGN ET</glyphName>
+      <mapping type="codepoint">U+204A</mapping>
+      <mapping type="diplomatic">⁊</mapping>
+      <mapping type="normalized">and</mapping>
+    </glyph>
+    <glyph xml:id="capond">
+      <glyphName>TIRONIAN SIGN ET</glyphName>
+      <mapping type="codepoint">U+204A</mapping>
+      <mapping type="diplomatic">⁊</mapping>
+      <mapping type="normalized">And</mapping>
+    </glyph>
+    <glyph xml:id="tins">
+      <glyphName>LATIN SMALL LETTER INSULAR T</glyphName>
+      <mapping type="codepoint">U+A787</mapping>
+      <mapping type="diplomatic">&#42887;</mapping>
+      <mapping type="normalized">t</mapping>
+    </glyph>
+    <glyph xml:id="that">
+      <glyphName>LATIN SMALL LETTER THORN WITH STROKE</glyphName>
+      <mapping type="codepoint">U+A765</mapping>
+      <mapping type="diplomatic">ꝥ</mapping>
+      <mapping type="normalized">þæt</mapping>
+    </glyph>
+    <glyph xml:id="capa">
+      <glyphName>LATIN CAPITAL LETTER A</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">a</mapping>
+      <mapping type="normalized">A</mapping>
+    </glyph>
+    <glyph xml:id="capo">
+      <glyphName>LATIN CAPITAL LETTER O</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">o</mapping>
+      <mapping type="normalized">O</mapping>
+    </glyph>
+    <glyph xml:id="capm">
+      <glyphName>LATIN CAPITAL LETTER M</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">m</mapping>
+      <mapping type="normalized">M</mapping>
+    </glyph>
+    <glyph xml:id="caps">
+      <glyphName>LATIN CAPITAL LETTER S</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">s</mapping>
+      <mapping type="normalized">S</mapping>
+    </glyph>
+    <glyph xml:id="capd">
+      <glyphName>LATIN CAPITAL LETTER D</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">d</mapping>
+      <mapping type="normalized">D</mapping>
+    </glyph>
+    <glyph xml:id="capl">
+      <glyphName>LATIN CAPITAL LETTER L</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">l</mapping>
+      <mapping type="normalized">L</mapping>
+    </glyph>
+    <glyph xml:id="capp">
+      <glyphName>LATIN CAPITAL LETTER P</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">p</mapping>
+      <mapping type="normalized">P</mapping>
+    </glyph>
+    <glyph xml:id="capc">
+      <glyphName>LATIN CAPITAL LETTER C</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">c</mapping>
+      <mapping type="normalized">C</mapping>
+    </glyph>
+    <glyph xml:id="caph">
+      <glyphName>LATIN CAPITAL LETTER H</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">h</mapping>
+      <mapping type="normalized">H</mapping>
+    </glyph>
+    <glyph xml:id="capn">
+      <glyphName>LATIN CAPITAL LETTER N</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">n</mapping>
+      <mapping type="normalized">N</mapping>
+    </glyph>
+    <glyph xml:id="capg">
+      <glyphName>LATIN CAPITAL LETTER G</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">g</mapping>
+      <mapping type="normalized">G</mapping>
+    </glyph>
+    <glyph xml:id="capf">
+      <glyphName>LATIN CAPITAL LETTER F</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">f</mapping>
+      <mapping type="normalized">F</mapping>
+    </glyph>
+    <glyph xml:id="cape">
+      <glyphName>LATIN CAPITAL LETTER E</glyphName>
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">e</mapping>
+      <mapping type="normalized">E</mapping>
+    </glyph>
+    <glyph xml:id="capthat">
+      <glyphName>LATIN CAPITAL LETTER THORN WITH STROKE</glyphName>
+      <mapping type="codepoint">U+A764</mapping>
+      <mapping type="diplomatic">&#42852;</mapping>
+      <mapping type="normalized">Þæt</mapping>
+    </glyph>
+    <glyph xml:id="capthorn">
+      <glyphName>LATIN CAPITAL LETTER THORN</glyphName>
+      <mapping type="diplomatic">&#254;</mapping>
+      <mapping type="normalized">&#222;</mapping>   
+    </glyph>
+    <glyph xml:id="ydot">
+      <glyphName>LATIN SMALL LETTER Y WITH DOT ABOVE</glyphName>
+      <mapping type="codepoint">U+1E8E</mapping>
+      <mapping type="diplomatic">&#7823;</mapping>
+      <mapping type="normalized">y</mapping>
+    </glyph>
+    <char xml:id="capb">
+      <mapping type="diplomatic">b</mapping>
+      <mapping type="normalized">B</mapping>    
+    </char>
+     <char xml:id="comma">
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">,</mapping>    
+    </char>
+    <char xml:id="semicolon">
+     <mapping type="diplomatic"></mapping>
+     <mapping type="normalized">;</mapping>    
+    </char>
+    <char xml:id="fullstop">
+     <mapping type="diplomatic"></mapping>
+     <mapping type="normalized">.</mapping>    
+    </char>
+    <char xml:id="middot">
+     <mapping type="diplomatic">&#183;</mapping>
+     <mapping type="normalized"></mapping>    
+    </char>
+    <char xml:id="middotcomma">
+     <mapping type="diplomatic"> &#183; </mapping>
+     <mapping type="normalized">, </mapping> 
+    </char>
+    <char xml:id="middotspace">
+     <mapping type="diplomatic">&#183;</mapping>
+     <mapping type="normalized"> &#183;</mapping>  
+    </char>
+    <char xml:id="middotspacerx">
+     <mapping type="diplomatic">&#183;</mapping>
+     <mapping type="normalized">&#183; </mapping>  
+    </char>
+    <char xml:id="middotnospace">
+     <mapping type="diplomatic"> &#183;</mapping>
+     <mapping type="normalized">&#183;</mapping>  
+    </char>
+    <char xml:id="addmiddot">
+     <mapping type="diplomatic"></mapping>
+     <mapping type="normalized">&#183;</mapping>  
+    </char>
+  </charDecl>
+  </encodingDesc> 
+ </teiHeader>
+  <facsimile xml:id="fac_Wonders">
+     <surface xml:id="WoE_surf_01" corresp="#WoE_01">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.1.jpg"/>
+       <zone corresp="#WoE_lb_98v_01" ulx="85" uly="66" lrx="319" lry="102" rend="visible" rendition="line" xml:id="WoE_line_98v_01"/>
+        <zone corresp="#WoE_lb_98v_02" ulx="105" uly="104" lrx="316" lry="136" rend="visible" rendition="line" xml:id="WoE_line_98v_02"/>
+        <zone corresp="#WoE_lb_98v_03" ulx="105" uly="130" lrx="331" lry="162" rend="visible" rendition="line" xml:id="WoE_line_98v_03"/>
+        <zone corresp="#WoE_lb_98v_04" ulx="108" uly="158" lrx="326" lry="191" rend="visible" rendition="line" xml:id="WoE_line_98v_04"/>
+        <zone corresp="#WoE_lb_98v_05" ulx="107" uly="188" lrx="327" lry="222" rend="visible" rendition="line" xml:id="WoE_line_98v_05"/>
+        <zone corresp="#WoE_lb_98v_06" ulx="115" uly="215" lrx="497" lry="250" rend="visible" rendition="line" xml:id="WoE_line_98v_06"/>
+        <zone corresp="#WoE_lb_98v_07" ulx="117" uly="244" lrx="506" lry="278" rend="visible" rendition="line" xml:id="WoE_line_98v_07"/>
+        <zone corresp="#WoE_lb_98v_08" ulx="116" uly="275" lrx="501" lry="311" rend="visible" rendition="line" xml:id="WoE_line_98v_08"/>
+        <zone corresp="#WoE_lb_98v_09" ulx="113" uly="307" lrx="488" lry="339" rend="visible" rendition="line" xml:id="WoE_line_98v_09"/>
+        <zone corresp="#WoE_lb_98v_10" ulx="113" uly="338" lrx="514" lry="373" rend="visible" rendition="line" xml:id="WoE_line_98v_10"/>
+        <zone corresp="#WoE_lb_98v_11" ulx="111" uly="371" lrx="390" lry="404" rend="visible" rendition="line" xml:id="WoE_line_98v_11"/>
+        <zone corresp="#WoE_lb_98v_12" ulx="89" uly="393" lrx="302" lry="433" rend="visible" rendition="line" xml:id="WoE_line_98v_12"/>
+        <zone corresp="#WoE_lb_98v_13" ulx="112" uly="432" lrx="294" lry="459" rend="visible" rendition="line" xml:id="WoE_line_98v_13"/>
+        <zone corresp="#WoE_lb_98v_14" ulx="108" uly="458" lrx="295" lry="492" rend="visible" rendition="line" xml:id="WoE_line_98v_14"/>
+        <zone corresp="#WoE_lb_98v_15" ulx="107" uly="490" lrx="297" lry="521" rend="visible" rendition="line" xml:id="WoE_line_98v_15"/>
+        <zone corresp="#WoE_lb_98v_16" ulx="109" uly="520" lrx="292" lry="555" rend="visible" rendition="line" xml:id="WoE_line_98v_16"/>
+        <zone corresp="#WoE_lb_98v_17" ulx="106" uly="554" lrx="500" lry="587" rend="visible" rendition="line" xml:id="WoE_line_98v_17"/>
+        <zone corresp="#WoE_lb_98v_18" ulx="109" uly="585" lrx="513" lry="623" rend="visible" rendition="line" xml:id="WoE_line_98v_18"/>
+        <zone corresp="#WoE_lb_98v_19" ulx="108" uly="616" lrx="496" lry="652" rend="visible" rendition="line" xml:id="WoE_line_98v_19"/>
+        <zone corresp="#WoE_lb_98v_20" ulx="110" uly="648" lrx="512" lry="682" rend="visible" rendition="line" xml:id="WoE_line_98v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_02" corresp="#WoE_02">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.2.jpg"/>
+       <zone corresp="#WoE_lb_99r_01" ulx="98" uly="44" lrx="504" lry="79" rend="visible" rendition="line" xml:id="WoE_line_99r_01"/>
+        <zone corresp="#WoE_lb_99r_02" ulx="96" uly="77" lrx="507" lry="116" rend="visible" rendition="line" xml:id="WoE_line_99r_02"/>
+        <zone corresp="#WoE_lb_99r_03" ulx="95" uly="110" lrx="517" lry="146" rend="visible" rendition="line" xml:id="WoE_line_99r_03"/>
+        <zone corresp="#WoE_lb_99r_04" ulx="94" uly="142" lrx="496" lry="178" rend="visible" rendition="line" xml:id="WoE_line_99r_04"/>
+        <zone corresp="#WoE_lb_99r_05" ulx="93" uly="173" lrx="334" lry="210" rend="visible" rendition="line" xml:id="WoE_line_99r_05"/>
+        <zone corresp="#WoE_lb_99r_06" ulx="59" uly="209" lrx="328" lry="254" rend="visible" rendition="line" xml:id="WoE_line_99r_06"/>
+        <zone corresp="#WoE_lb_99r_07" ulx="91" uly="241" lrx="335" lry="274" rend="visible" rendition="line" xml:id="WoE_line_99r_07"/>
+        <zone corresp="#WoE_lb_99r_08" ulx="90" uly="269" lrx="345" lry="309" rend="visible" rendition="line" xml:id="WoE_line_99r_08"/>
+        <zone corresp="#WoE_lb_99r_09" ulx="90" uly="303" lrx="352" lry="332" rend="visible" rendition="line" xml:id="WoE_line_99r_09"/>
+        <zone corresp="#WoE_lb_99r_10" ulx="90" uly="337" lrx="355" lry="375" rend="visible" rendition="line" xml:id="WoE_line_99r_10"/>
+        <zone corresp="#WoE_lb_99r_11" ulx="89" uly="370" lrx="515" lry="407" rend="visible" rendition="line" xml:id="WoE_line_99r_11"/>
+        <zone corresp="#WoE_lb_99r_12" ulx="87" uly="402" lrx="519" lry="439" rend="visible" rendition="line" xml:id="WoE_line_99r_12"/>
+        <zone corresp="#WoE_lb_99r_13" ulx="88" uly="437" lrx="466" lry="475" rend="visible" rendition="line" xml:id="WoE_line_99r_13"/>
+        <zone corresp="#WoE_lb_99r_14" ulx="54" uly="466" lrx="337" lry="527" rend="visible" rendition="line" xml:id="WoE_line_99r_14"/>
+        <zone corresp="#WoE_lb_99r_15" ulx="87" uly="501" lrx="322" lry="534" rend="visible" rendition="line" xml:id="WoE_line_99r_15"/>
+        <zone corresp="#WoE_lb_99r_16" ulx="86" uly="534" lrx="318" lry="570" rend="visible" rendition="line" xml:id="WoE_line_99r_16"/>
+        <zone corresp="#WoE_lb_99r_17" ulx="87" uly="566" lrx="330" lry="604" rend="visible" rendition="line" xml:id="WoE_line_99r_17"/>
+        <zone corresp="#WoE_lb_99r_18" ulx="87" uly="604" lrx="296" lry="642" rend="visible" rendition="line" xml:id="WoE_line_99r_18"/>
+        <zone corresp="#WoE_lb_99r_19" ulx="89" uly="637" lrx="502" lry="675" rend="visible" rendition="line" xml:id="WoE_line_99r_19"/>
+        <zone corresp="#WoE_lb_99r_20" ulx="88" uly="671" lrx="522" lry="708" rend="visible" rendition="line" xml:id="WoE_line_99r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_03" corresp="#WoE_03">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.3.jpg"/>
+       <zone corresp="#WoE_lb_99v_01" ulx="106" uly="57" lrx="531" lry="93" rend="visible" rendition="line" xml:id="WoE_line_99v_01"/>
+        <zone corresp="#WoE_lb_99v_02" ulx="110" uly="154" lrx="527" lry="196" rend="visible" rendition="line" xml:id="WoE_line_99v_02"/>
+        <zone corresp="#WoE_lb_99v_03" ulx="104" uly="192" lrx="528" lry="238" rend="visible" rendition="line" xml:id="WoE_line_99v_03"/>
+        <zone corresp="#WoE_lb_99v_04" ulx="108" uly="226" lrx="312" lry="264" rend="visible" rendition="line" xml:id="WoE_line_99v_04"/>
+        <zone corresp="#WoE_lb_99v_05" ulx="113" uly="256" lrx="335" lry="290" rend="visible" rendition="line" xml:id="WoE_line_99v_05"/>
+        <zone corresp="#WoE_lb_99v_06" ulx="107" uly="293" lrx="348" lry="332" rend="visible" rendition="line" xml:id="WoE_line_99v_06"/>
+        <zone corresp="#WoE_lb_99v_07" ulx="105" uly="324" lrx="347" lry="365" rend="visible" rendition="line" xml:id="WoE_line_99v_07"/>
+        <zone corresp="#WoE_lb_99v_08" ulx="105" uly="361" lrx="356" lry="400" rend="visible" rendition="line" xml:id="WoE_line_99v_08"/>
+        <zone corresp="#WoE_lb_99v_09" ulx="101" uly="397" lrx="362" lry="436" rend="visible" rendition="line" xml:id="WoE_line_99v_09"/>
+        <zone corresp="#WoE_lb_99v_10" ulx="105" uly="430" lrx="356" lry="466" rend="visible" rendition="line" xml:id="WoE_line_99v_10"/>
+        <zone corresp="#WoE_lb_99v_11" ulx="109" uly="463" lrx="350" lry="502" rend="visible" rendition="line" xml:id="WoE_line_99v_11"/>
+        <zone corresp="#WoE_lb_99v_12" ulx="105" uly="500" lrx="352" lry="540" rend="visible" rendition="line" xml:id="WoE_line_99v_12"/>
+        <zone corresp="#WoE_lb_99v_13" ulx="105" uly="526" lrx="527" lry="565" rend="visible" rendition="line" xml:id="WoE_line_99v_13"/>
+        <zone corresp="#WoE_lb_99v_14" ulx="107" uly="560" lrx="540" lry="600" rend="visible" rendition="line" xml:id="WoE_line_99v_14"/>
+        <zone corresp="#WoE_lb_99v_15" ulx="109" uly="590" lrx="546" lry="638" rend="visible" rendition="line" xml:id="WoE_line_99v_15"/>
+        <zone corresp="#WoE_lb_99v_16" ulx="109" uly="634" lrx="350" lry="678" rend="visible" rendition="line" xml:id="WoE_line_99v_16"/>
+        <zone corresp="#WoE_lb_99v_17" ulx="84" uly="667" lrx="544" lry="719" rend="visible" rendition="line" xml:id="WoE_line_99v_17"/>
+        <zone corresp="#WoE_lb_99v_18" ulx="114" uly="700" lrx="548" lry="750" rend="visible" rendition="line" xml:id="WoE_line_99v_18"/>
+    </surface>
+    <surface xml:id="WoE_surf_04" corresp="#WoE_04">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.4.jpg"/>
+       <zone corresp="#WoE_lb_100r_01" ulx="109" uly="61" lrx="492" lry="102" rend="visible" rendition="line" xml:id="WoE_line_100r_01"/>
+        <zone corresp="#WoE_lb_100r_02" ulx="111" uly="98" lrx="493" lry="135" rend="visible" rendition="line" xml:id="WoE_line_100r_02"/>
+        <zone corresp="#WoE_lb_100r_03" ulx="111" uly="125" lrx="499" lry="162" rend="visible" rendition="line" xml:id="WoE_line_100r_03"/>
+        <zone corresp="#WoE_lb_100r_04" ulx="110" uly="153" lrx="492" lry="190" rend="visible" rendition="line" xml:id="WoE_line_100r_04"/>
+        <zone corresp="#WoE_lb_100r_05" ulx="109" uly="184" lrx="493" lry="219" rend="visible" rendition="line" xml:id="WoE_line_100r_05"/>
+        <zone corresp="#WoE_lb_100r_06" ulx="110" uly="212" lrx="494" lry="247" rend="visible" rendition="line" xml:id="WoE_line_100r_06"/>
+        <zone corresp="#WoE_lb_100r_07" ulx="107" uly="240" lrx="502" lry="274" rend="visible" rendition="line" xml:id="WoE_line_100r_07"/>
+        <zone corresp="#WoE_lb_100r_08" ulx="103" uly="271" lrx="498" lry="304" rend="visible" rendition="line" xml:id="WoE_line_100r_08"/>
+        <zone corresp="#WoE_lb_100r_09" ulx="105" uly="302" lrx="506" lry="339" rend="visible" rendition="line" xml:id="WoE_line_100r_09"/>
+        <zone corresp="#WoE_lb_100r_10" ulx="82" uly="332" lrx="344" lry="377" rend="visible" rendition="line" xml:id="WoE_line_100r_10"/>
+        <zone corresp="#WoE_lb_100r_11" ulx="107" uly="366" lrx="345" lry="401" rend="visible" rendition="line" xml:id="WoE_line_100r_11"/>
+        <zone corresp="#WoE_lb_100r_12" ulx="104" uly="394" lrx="350" lry="430" rend="visible" rendition="line" xml:id="WoE_line_100r_12"/>
+        <zone corresp="#WoE_lb_100r_13" ulx="104" uly="426" lrx="349" lry="464" rend="visible" rendition="line" xml:id="WoE_line_100r_13"/>
+        <zone corresp="#WoE_lb_100r_14" ulx="102" uly="456" lrx="344" lry="487" rend="visible" rendition="line" xml:id="WoE_line_100r_14"/>
+        <zone corresp="#WoE_lb_100r_15" ulx="103" uly="481" lrx="349" lry="521" rend="visible" rendition="line" xml:id="WoE_line_100r_15"/>
+        <zone corresp="#WoE_lb_100r_16" ulx="104" uly="513" lrx="351" lry="553" rend="visible" rendition="line" xml:id="WoE_line_100r_16"/>
+        <zone corresp="#WoE_lb_100r_17" ulx="103" uly="545" lrx="353" lry="586" rend="visible" rendition="line" xml:id="WoE_line_100r_17"/>
+        <zone corresp="#WoE_lb_100r_18" ulx="105" uly="581" lrx="502" lry="620" rend="visible" rendition="line" xml:id="WoE_line_100r_18"/>
+        <zone corresp="#WoE_lb_100r_19" ulx="105" uly="612" lrx="205" lry="646" rend="visible" rendition="line" xml:id="WoE_line_100r_19"/>
+        <zone corresp="#WoE_lb_100r_20" ulx="75" uly="643" lrx="508" lry="695" rend="visible" rendition="line" xml:id="WoE_line_100r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_05" corresp="#WoE_05">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.5.jpg"/>
+       <zone corresp="#WoE_lb_100v_01" ulx="134" uly="50" lrx="524" lry="93" rend="visible" rendition="line" xml:id="WoE_line_100v_01"/>
+        <zone corresp="#WoE_lb_100v_02" ulx="116" uly="87" lrx="500" lry="128" rend="visible" rendition="line" xml:id="WoE_line_100v_02"/>
+        <zone corresp="#WoE_lb_100v_03" ulx="113" uly="115" lrx="517" lry="153" rend="visible" rendition="line" xml:id="WoE_line_100v_03"/>
+        <zone corresp="#WoE_lb_100v_04" ulx="117" uly="143" lrx="342" lry="189" rend="visible" rendition="line" xml:id="WoE_line_100v_04"/>
+        <zone corresp="#WoE_lb_100v_05" ulx="101" uly="184" lrx="508" lry="222" rend="visible" rendition="line" xml:id="WoE_line_100v_05"/>
+        <zone corresp="#WoE_lb_100v_06" ulx="120" uly="206" lrx="524" lry="244" rend="visible" rendition="line" xml:id="WoE_line_100v_06"/>
+        <zone corresp="#WoE_lb_100v_07" ulx="119" uly="235" lrx="535" lry="274" rend="visible" rendition="line" xml:id="WoE_line_100v_07"/>
+        <zone corresp="#WoE_lb_100v_08" ulx="118" uly="264" lrx="540" lry="305" rend="visible" rendition="line" xml:id="WoE_line_100v_08"/>
+        <zone corresp="#WoE_lb_100v_09" ulx="111" uly="298" lrx="515" lry="337" rend="visible" rendition="line" xml:id="WoE_line_100v_09"/>
+        <zone corresp="#WoE_lb_100v_10" ulx="114" uly="332" lrx="527" lry="370" rend="visible" rendition="line" xml:id="WoE_line_100v_10"/>
+        <zone corresp="#WoE_lb_100v_11" ulx="119" uly="365" lrx="528" lry="406" rend="visible" rendition="line" xml:id="WoE_line_100v_11"/>
+        <zone corresp="#WoE_lb_100v_12" ulx="115" uly="395" lrx="537" lry="434" rend="visible" rendition="line" xml:id="WoE_line_100v_12"/>
+        <zone corresp="#WoE_lb_100v_13" ulx="113" uly="429" lrx="542" lry="463" rend="visible" rendition="line" xml:id="WoE_line_100v_13"/>
+        <zone corresp="#WoE_lb_100v_14" ulx="115" uly="457" lrx="530" lry="500" rend="visible" rendition="line" xml:id="WoE_line_100v_14"/>
+        <zone corresp="#WoE_lb_100v_15" ulx="116" uly="488" lrx="522" lry="524" rend="visible" rendition="line" xml:id="WoE_line_100v_15"/>
+        <zone corresp="#WoE_lb_100v_16" ulx="115" uly="520" lrx="515" lry="560" rend="visible" rendition="line" xml:id="WoE_line_100v_16"/>
+        <zone corresp="#WoE_lb_100v_17" ulx="113" uly="553" lrx="529" lry="592" rend="visible" rendition="line" xml:id="WoE_line_100v_17"/>
+        <zone corresp="#WoE_lb_100v_18" ulx="113" uly="589" lrx="521" lry="637" rend="visible" rendition="line" xml:id="WoE_line_100v_18"/>
+        <zone corresp="#WoE_lb_100v_19" ulx="115" uly="625" lrx="507" lry="663" rend="visible" rendition="line" xml:id="WoE_line_100v_19"/>
+        <zone corresp="#WoE_lb_100v_20" ulx="114" uly="657" lrx="514" lry="697" rend="visible" rendition="line" xml:id="WoE_line_100v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_06" corresp="#WoE_06">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.6.jpg"/>
+       <zone corresp="#WoE_lb_101r_01" ulx="78" uly="64" lrx="345" lry="103" rend="visible" rendition="line" xml:id="WoE_line_101r_01"/>
+        <zone corresp="#WoE_lb_101r_02" ulx="52" uly="514" lrx="472" lry="567" rend="visible" rendition="line" xml:id="WoE_line_101r_02"/>
+        <zone corresp="#WoE_lb_101r_03" ulx="80" uly="546" lrx="471" lry="588" rend="visible" rendition="line" xml:id="WoE_line_101r_03"/>
+        <zone corresp="#WoE_lb_101r_04" ulx="81" uly="576" lrx="475" lry="618" rend="visible" rendition="line" xml:id="WoE_line_101r_04"/>
+        <zone corresp="#WoE_lb_101r_05" ulx="83" uly="617" lrx="470" lry="653" rend="visible" rendition="line" xml:id="WoE_line_101r_05"/>
+        <zone corresp="#WoE_lb_101r_06" ulx="86" uly="649" lrx="494" lry="686" rend="visible" rendition="line" xml:id="WoE_line_101r_06"/>
+    </surface>
+    <surface xml:id="WoE_surf_07" corresp="#WoE_07">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.7.jpg"/>
+       <zone corresp="#WoE_lb_101v_01" ulx="152" uly="57" lrx="520" lry="95" rend="visible" rendition="line" xml:id="WoE_line_101v_01"/>
+        <zone corresp="#WoE_lb_101v_02" ulx="150" uly="85" lrx="237" lry="122" rend="visible" rendition="line" xml:id="WoE_line_101v_02"/>
+        <zone corresp="#WoE_lb_101v_03" ulx="112" uly="117" lrx="325" lry="164" rend="visible" rendition="line" xml:id="WoE_line_101v_03"/>
+        <zone corresp="#WoE_lb_101v_04" ulx="149" uly="147" lrx="318" lry="183" rend="visible" rendition="line" xml:id="WoE_line_101v_04"/>
+        <zone corresp="#WoE_lb_101v_05" ulx="150" uly="178" lrx="333" lry="214" rend="visible" rendition="line" xml:id="WoE_line_101v_05"/>
+        <zone corresp="#WoE_lb_101v_06" ulx="152" uly="208" lrx="319" lry="245" rend="visible" rendition="line" xml:id="WoE_line_101v_06"/>
+        <zone corresp="#WoE_lb_101v_07" ulx="152" uly="233" lrx="340" lry="277" rend="visible" rendition="line" xml:id="WoE_line_101v_07"/>
+        <zone corresp="#WoE_lb_101v_08" ulx="160" uly="272" lrx="319" lry="306" rend="visible" rendition="line" xml:id="WoE_line_101v_08"/>
+        <zone corresp="#WoE_lb_101v_09" ulx="146" uly="298" lrx="545" lry="338" rend="visible" rendition="line" xml:id="WoE_line_101v_09"/>
+        <zone corresp="#WoE_lb_101v_10" ulx="147" uly="334" lrx="541" lry="373" rend="visible" rendition="line" xml:id="WoE_line_101v_10"/>
+        <zone corresp="#WoE_lb_101v_11" ulx="148" uly="367" lrx="543" lry="403" rend="visible" rendition="line" xml:id="WoE_line_101v_11"/>
+        <zone corresp="#WoE_lb_101v_12" ulx="120" uly="396" lrx="352" lry="431" rend="visible" rendition="line" xml:id="WoE_line_101v_12"/>
+        <zone corresp="#WoE_lb_101v_13" ulx="142" uly="422" lrx="346" lry="454" rend="visible" rendition="line" xml:id="WoE_line_101v_13"/>
+        <zone corresp="#WoE_lb_101v_14" ulx="142" uly="459" lrx="347" lry="492" rend="visible" rendition="line" xml:id="WoE_line_101v_14"/>
+        <zone corresp="#WoE_lb_101v_15" ulx="143" uly="484" lrx="343" lry="525" rend="visible" rendition="line" xml:id="WoE_line_101v_15"/>
+        <zone corresp="#WoE_lb_101v_16" ulx="142" uly="522" lrx="349" lry="556" rend="visible" rendition="line" xml:id="WoE_line_101v_16"/>
+        <zone corresp="#WoE_lb_101v_17" ulx="140" uly="547" lrx="352" lry="587" rend="visible" rendition="line" xml:id="WoE_line_101v_17"/>
+        <zone corresp="#WoE_lb_101v_18" ulx="141" uly="581" lrx="329" lry="612" rend="visible" rendition="line" xml:id="WoE_line_101v_18"/>
+        <zone corresp="#WoE_lb_101v_19" ulx="142" uly="617" lrx="533" lry="654" rend="visible" rendition="line" xml:id="WoE_line_101v_19"/>
+        <zone corresp="#WoE_lb_101v_20" ulx="143" uly="647" lrx="538" lry="687" rend="visible" rendition="line" xml:id="WoE_line_101v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_08" corresp="#WoE_08">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.8.jpg"/>
+       <zone corresp="#WoE_lb_102r_01" ulx="130" uly="92" lrx="514" lry="138" rend="visible" rendition="line" xml:id="WoE_line_102r_01"/>
+        <zone corresp="#WoE_lb_102r_02" ulx="129" uly="127" lrx="515" lry="166" rend="visible" rendition="line" xml:id="WoE_line_102r_02"/>
+        <zone corresp="#WoE_lb_102r_03" ulx="84" uly="153" lrx="320" lry="210" rend="visible" rendition="line" xml:id="WoE_line_102r_03"/>
+        <zone corresp="#WoE_lb_102r_04" ulx="126" uly="191" lrx="301" lry="224" rend="visible" rendition="line" xml:id="WoE_line_102r_04"/>
+        <zone corresp="#WoE_lb_102r_05" ulx="127" uly="216" lrx="329" lry="253" rend="visible" rendition="line" xml:id="WoE_line_102r_05"/>
+        <zone corresp="#WoE_lb_102r_06" ulx="123" uly="247" lrx="324" lry="280" rend="visible" rendition="line" xml:id="WoE_line_102r_06"/>
+        <zone corresp="#WoE_lb_102r_07" ulx="122" uly="281" lrx="337" lry="311" rend="visible" rendition="line" xml:id="WoE_line_102r_07"/>
+        <zone corresp="#WoE_lb_102r_08" ulx="123" uly="306" lrx="334" lry="341" rend="visible" rendition="line" xml:id="WoE_line_102r_08"/>
+        <zone corresp="#WoE_lb_102r_09" ulx="122" uly="334" lrx="331" lry="374" rend="visible" rendition="line" xml:id="WoE_line_102r_09"/>
+        <zone corresp="#WoE_lb_102r_10" ulx="123" uly="367" lrx="312" lry="403" rend="visible" rendition="line" xml:id="WoE_line_102r_10"/>
+        <zone corresp="#WoE_lb_102r_11" ulx="123" uly="397" lrx="327" lry="432" rend="visible" rendition="line" xml:id="WoE_line_102r_11"/>
+        <zone corresp="#WoE_lb_102r_12" ulx="121" uly="428" lrx="451" lry="463" rend="visible" rendition="line" xml:id="WoE_line_102r_12"/>
+        <zone corresp="#WoE_lb_102r_13" ulx="75" uly="462" lrx="250" lry="517" rend="visible" rendition="line" xml:id="WoE_line_102r_13"/>
+        <zone corresp="#WoE_lb_102r_14" ulx="124" uly="488" lrx="278" lry="521" rend="visible" rendition="line" xml:id="WoE_line_102r_14"/>
+        <zone corresp="#WoE_lb_102r_15" ulx="123" uly="516" lrx="264" lry="552" rend="visible" rendition="line" xml:id="WoE_line_102r_15"/>
+        <zone corresp="#WoE_lb_102r_16" ulx="124" uly="550" lrx="267" lry="580" rend="visible" rendition="line" xml:id="WoE_line_102r_16"/>
+        <zone corresp="#WoE_lb_102r_17" ulx="125" uly="583" lrx="258" lry="615" rend="visible" rendition="line" xml:id="WoE_line_102r_17"/>
+        <zone corresp="#WoE_lb_102r_18" ulx="127" uly="611" lrx="266" lry="651" rend="visible" rendition="line" xml:id="WoE_line_102r_18"/>
+        <zone corresp="#WoE_lb_102r_19" ulx="126" uly="652" lrx="175" lry="686" rend="visible" rendition="line" xml:id="WoE_line_102r_19"/>
+        <zone corresp="#WoE_lb_102r_20" ulx="87" uly="668" lrx="510" lry="748" rend="visible" rendition="line" xml:id="WoE_line_102r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_09" corresp="#WoE_09">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.9.jpg"/>
+       <zone corresp="#WoE_lb_102v_01" ulx="123" uly="90" lrx="256" lry="131" rend="visible" rendition="line" xml:id="WoE_line_102v_01"/>
+        <zone corresp="#WoE_lb_102v_02" ulx="104" uly="124" lrx="259" lry="159" rend="visible" rendition="line" xml:id="WoE_line_102v_02"/>
+        <zone corresp="#WoE_lb_102v_03" ulx="104" uly="157" lrx="262" lry="190" rend="visible" rendition="line" xml:id="WoE_line_102v_03"/>
+        <zone corresp="#WoE_lb_102v_04" ulx="111" uly="185" lrx="261" lry="219" rend="visible" rendition="line" xml:id="WoE_line_102v_04"/>
+        <zone corresp="#WoE_lb_102v_05" ulx="121" uly="217" lrx="260" lry="245" rend="visible" rendition="line" xml:id="WoE_line_102v_05"/>
+        <zone corresp="#WoE_lb_102v_06" ulx="106" uly="249" lrx="274" lry="286" rend="visible" rendition="line" xml:id="WoE_line_102v_06"/>
+        <zone corresp="#WoE_lb_102v_07" ulx="104" uly="276" lrx="229" lry="310" rend="visible" rendition="line" xml:id="WoE_line_102v_07"/>
+        <zone corresp="#WoE_lb_102v_08" ulx="87" uly="393" lrx="516" lry="439" rend="visible" rendition="line" xml:id="WoE_line_102v_08"/>
+        <zone corresp="#WoE_lb_102v_09" ulx="133" uly="431" lrx="523" lry="466" rend="visible" rendition="line" xml:id="WoE_line_102v_09"/>
+        <zone corresp="#WoE_lb_102v_10" ulx="103" uly="459" lrx="500" lry="491" rend="visible" rendition="line" xml:id="WoE_line_102v_10"/>
+        <zone corresp="#WoE_lb_102v_11" ulx="102" uly="488" lrx="470" lry="522" rend="visible" rendition="line" xml:id="WoE_line_102v_11"/>
+        <zone corresp="#WoE_lb_102v_12" ulx="100" uly="522" lrx="400" lry="556" rend="visible" rendition="line" xml:id="WoE_line_102v_12"/>
+        <zone corresp="#WoE_lb_102v_13" ulx="97" uly="553" lrx="272" lry="590" rend="visible" rendition="line" xml:id="WoE_line_102v_13"/>
+        <zone corresp="#WoE_lb_102v_14" ulx="95" uly="585" lrx="276" lry="622" rend="visible" rendition="line" xml:id="WoE_line_102v_14"/>
+        <zone corresp="#WoE_lb_102v_15" ulx="95" uly="614" lrx="279" lry="650" rend="visible" rendition="line" xml:id="WoE_line_102v_15"/>
+        <zone corresp="#WoE_lb_102v_16" ulx="115" uly="649" lrx="279" lry="686" rend="visible" rendition="line" xml:id="WoE_line_102v_16"/>
+        <zone corresp="#WoE_lb_102v_17" ulx="120" uly="679" lrx="281" lry="715" rend="visible" rendition="line" xml:id="WoE_line_102v_17"/>
+    </surface>
+    <surface xml:id="WoE_surf_10" corresp="#WoE_10">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.10.jpg"/>
+       <zone corresp="#WoE_lb_103r_01" ulx="96" uly="83" lrx="462" lry="123" rend="visible" rendition="line" xml:id="WoE_line_103r_01"/>
+        <zone corresp="#WoE_lb_103r_02" ulx="96" uly="120" lrx="483" lry="159" rend="visible" rendition="line" xml:id="WoE_line_103r_02"/>
+        <zone corresp="#WoE_lb_103r_03" ulx="93" uly="148" lrx="479" lry="183" rend="visible" rendition="line" xml:id="WoE_line_103r_03"/>
+        <zone corresp="#WoE_lb_103r_04" ulx="92" uly="177" lrx="487" lry="223" rend="visible" rendition="line" xml:id="WoE_line_103r_04"/>
+        <zone corresp="#WoE_lb_103r_05" ulx="91" uly="210" lrx="496" lry="248" rend="visible" rendition="line" xml:id="WoE_line_103r_05"/>
+        <zone corresp="#WoE_lb_103r_06" ulx="90" uly="242" lrx="492" lry="278" rend="visible" rendition="line" xml:id="WoE_line_103r_06"/>
+        <zone corresp="#WoE_lb_103r_07" ulx="88" uly="272" lrx="468" lry="304" rend="visible" rendition="line" xml:id="WoE_line_103r_07"/>
+        <zone corresp="#WoE_lb_103r_08" ulx="86" uly="304" lrx="297" lry="338" rend="visible" rendition="line" xml:id="WoE_line_103r_08"/>
+        <zone corresp="#WoE_lb_103r_09" ulx="46" uly="333" lrx="233" lry="395" rend="visible" rendition="line" xml:id="WoE_line_103r_09"/>
+        <zone corresp="#WoE_lb_103r_10" ulx="88" uly="367" lrx="253" lry="401" rend="visible" rendition="line" xml:id="WoE_line_103r_10"/>
+        <zone corresp="#WoE_lb_103r_11" ulx="87" uly="398" lrx="254" lry="433" rend="visible" rendition="line" xml:id="WoE_line_103r_11"/>
+        <zone corresp="#WoE_lb_103r_12" ulx="87" uly="431" lrx="253" lry="465" rend="visible" rendition="line" xml:id="WoE_line_103r_12"/>
+        <zone corresp="#WoE_lb_103r_13" ulx="87" uly="459" lrx="242" lry="493" rend="visible" rendition="line" xml:id="WoE_line_103r_13"/>
+        <zone corresp="#WoE_lb_103r_14" ulx="85" uly="489" lrx="498" lry="527" rend="visible" rendition="line" xml:id="WoE_line_103r_14"/>
+        <zone corresp="#WoE_lb_103r_15" ulx="88" uly="518" lrx="499" lry="561" rend="visible" rendition="line" xml:id="WoE_line_103r_15"/>
+        <zone corresp="#WoE_lb_103r_16" ulx="89" uly="550" lrx="496" lry="587" rend="visible" rendition="line" xml:id="WoE_line_103r_16"/>
+        <zone corresp="#WoE_lb_103r_17" ulx="90" uly="580" lrx="486" lry="619" rend="visible" rendition="line" xml:id="WoE_line_103r_17"/>
+        <zone corresp="#WoE_lb_103r_18" ulx="91" uly="617" lrx="507" lry="656" rend="visible" rendition="line" xml:id="WoE_line_103r_18"/>
+        <zone corresp="#WoE_lb_103r_19" ulx="96" uly="652" lrx="495" lry="689" rend="visible" rendition="line" xml:id="WoE_line_103r_19"/>
+        <zone corresp="#WoE_lb_103r_20" ulx="91" uly="683" lrx="394" lry="722" rend="visible" rendition="line" xml:id="WoE_line_103r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_11" corresp="#WoE_11">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.11.jpg"/>
+       <zone corresp="#WoE_lb_103v_01" ulx="115" uly="90" lrx="345" lry="141" rend="visible" rendition="line" xml:id="WoE_line_103v_01"/>
+        <zone corresp="#WoE_lb_103v_02" ulx="130" uly="120" lrx="355" lry="160" rend="visible" rendition="line" xml:id="WoE_line_103v_02"/>
+        <zone corresp="#WoE_lb_103v_03" ulx="131" uly="150" lrx="349" lry="184" rend="visible" rendition="line" xml:id="WoE_line_103v_03"/>
+        <zone corresp="#WoE_lb_103v_04" ulx="134" uly="180" lrx="348" lry="218" rend="visible" rendition="line" xml:id="WoE_line_103v_04"/>
+        <zone corresp="#WoE_lb_103v_05" ulx="132" uly="213" lrx="341" lry="249" rend="visible" rendition="line" xml:id="WoE_line_103v_05"/>
+        <zone corresp="#WoE_lb_103v_06" ulx="131" uly="245" lrx="338" lry="277" rend="visible" rendition="line" xml:id="WoE_line_103v_06"/>
+        <zone corresp="#WoE_lb_103v_07" ulx="131" uly="270" lrx="525" lry="305" rend="visible" rendition="line" xml:id="WoE_line_103v_07"/>
+        <zone corresp="#WoE_lb_103v_08" ulx="131" uly="300" lrx="390" lry="337" rend="visible" rendition="line" xml:id="WoE_line_103v_08"/>
+        <zone corresp="#WoE_lb_103v_09" ulx="230" uly="332" lrx="317" lry="360" rend="visible" rendition="line" xml:id="WoE_line_103v_09"/>
+        <zone corresp="#WoE_lb_103v_10" ulx="128" uly="363" lrx="315" lry="393" rend="visible" rendition="line" xml:id="WoE_line_103v_10"/>
+        <zone corresp="#WoE_lb_103v_11" ulx="127" uly="392" lrx="308" lry="431" rend="visible" rendition="line" xml:id="WoE_line_103v_11"/>
+        <zone corresp="#WoE_lb_103v_12" ulx="125" uly="422" lrx="297" lry="461" rend="visible" rendition="line" xml:id="WoE_line_103v_12"/>
+        <zone corresp="#WoE_lb_103v_13" ulx="132" uly="455" lrx="296" lry="488" rend="visible" rendition="line" xml:id="WoE_line_103v_13"/>
+        <zone corresp="#WoE_lb_103v_14" ulx="125" uly="490" lrx="315" lry="523" rend="visible" rendition="line" xml:id="WoE_line_103v_14"/>
+        <zone corresp="#WoE_lb_103v_15" ulx="183" uly="520" lrx="287" lry="556" rend="visible" rendition="line" xml:id="WoE_line_103v_15"/>
+        <zone corresp="#WoE_lb_103v_16" ulx="126" uly="552" lrx="503" lry="594" rend="visible" rendition="line" xml:id="WoE_line_103v_16"/>
+        <zone corresp="#WoE_lb_103v_17" ulx="125" uly="584" lrx="522" lry="618" rend="visible" rendition="line" xml:id="WoE_line_103v_17"/>
+        <zone corresp="#WoE_lb_103v_18" ulx="126" uly="618" lrx="538" lry="645" rend="visible" rendition="line" xml:id="WoE_line_103v_18"/>
+        <zone corresp="#WoE_lb_103v_19" ulx="148" uly="654" lrx="538" lry="686" rend="visible" rendition="line" xml:id="WoE_line_103v_19"/>
+        <zone corresp="#WoE_lb_103v_20" ulx="140" uly="673" lrx="520" lry="707" rend="visible" rendition="line" xml:id="WoE_line_103v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_12" corresp="#WoE_12">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.12.jpg"/>
+       <zone corresp="#WoE_lb_104r_01" ulx="98" uly="41" lrx="487" lry="78" rend="visible" rendition="line" xml:id="WoE_line_104r_01"/>
+        <zone corresp="#WoE_lb_104r_02" ulx="98" uly="71" lrx="489" lry="107" rend="visible" rendition="line" xml:id="WoE_line_104r_02"/>
+        <zone corresp="#WoE_lb_104r_03" ulx="94" uly="100" lrx="466" lry="135" rend="visible" rendition="line" xml:id="WoE_line_104r_03"/>
+        <zone corresp="#WoE_lb_104r_04" ulx="44" uly="128" lrx="494" lry="192" rend="visible" rendition="line" xml:id="WoE_line_104r_04"/>
+        <zone corresp="#WoE_lb_104r_05" ulx="95" uly="161" lrx="493" lry="198" rend="visible" rendition="line" xml:id="WoE_line_104r_05"/>
+        <zone corresp="#WoE_lb_104r_06" ulx="94" uly="194" lrx="490" lry="226" rend="visible" rendition="line" xml:id="WoE_line_104r_06"/>
+        <zone corresp="#WoE_lb_104r_07" ulx="92" uly="222" lrx="274" lry="257" rend="visible" rendition="line" xml:id="WoE_line_104r_07"/>
+        <zone corresp="#WoE_lb_104r_08" ulx="93" uly="259" lrx="265" lry="290" rend="visible" rendition="line" xml:id="WoE_line_104r_08"/>
+        <zone corresp="#WoE_lb_104r_09" ulx="93" uly="289" lrx="270" lry="321" rend="visible" rendition="line" xml:id="WoE_line_104r_09"/>
+        <zone corresp="#WoE_lb_104r_10" ulx="95" uly="320" lrx="273" lry="354" rend="visible" rendition="line" xml:id="WoE_line_104r_10"/>
+        <zone corresp="#WoE_lb_104r_11" ulx="94" uly="351" lrx="274" lry="385" rend="visible" rendition="line" xml:id="WoE_line_104r_11"/>
+        <zone corresp="#WoE_lb_104r_12" ulx="93" uly="382" lrx="271" lry="415" rend="visible" rendition="line" xml:id="WoE_line_104r_12"/>
+        <zone corresp="#WoE_lb_104r_13" ulx="93" uly="411" lrx="280" lry="446" rend="visible" rendition="line" xml:id="WoE_line_104r_13"/>
+        <zone corresp="#WoE_lb_104r_14" ulx="95" uly="443" lrx="279" lry="476" rend="visible" rendition="line" xml:id="WoE_line_104r_14"/>
+        <zone corresp="#WoE_lb_104r_15" ulx="96" uly="474" lrx="266" lry="510" rend="visible" rendition="line" xml:id="WoE_line_104r_15"/>
+        <zone corresp="#WoE_lb_104r_16" ulx="96" uly="504" lrx="476" lry="539" rend="visible" rendition="line" xml:id="WoE_line_104r_16"/>
+        <zone corresp="#WoE_lb_104r_17" ulx="95" uly="534" lrx="487" lry="571" rend="visible" rendition="line" xml:id="WoE_line_104r_17"/>
+        <zone corresp="#WoE_lb_104r_18" ulx="96" uly="568" lrx="282" lry="603" rend="visible" rendition="line" xml:id="WoE_line_104r_18"/>
+        <zone corresp="#WoE_lb_104r_19" ulx="56" uly="600" lrx="502" lry="653" rend="visible" rendition="line" xml:id="WoE_line_104r_19"/>
+        <zone corresp="#WoE_lb_104r_20" ulx="98" uly="630" lrx="420" lry="682" rend="visible" rendition="line" xml:id="WoE_line_104r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_13" corresp="#WoE_13">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.13.jpg"/>
+       <zone corresp="#WoE_lb_104v_01" ulx="126" uly="48" lrx="308" lry="79" rend="visible" rendition="line" xml:id="WoE_line_104v_01"/>
+        <zone corresp="#WoE_lb_104v_02" ulx="124" uly="75" lrx="251" lry="105" rend="visible" rendition="line" xml:id="WoE_line_104v_02"/>
+        <zone corresp="#WoE_lb_104v_03" ulx="132" uly="105" lrx="300" lry="136" rend="visible" rendition="line" xml:id="WoE_line_104v_03"/>
+        <zone corresp="#WoE_lb_104v_04" ulx="134" uly="132" lrx="308" lry="162" rend="visible" rendition="line" xml:id="WoE_line_104v_04"/>
+        <zone corresp="#WoE_lb_104v_05" ulx="129" uly="163" lrx="305" lry="190" rend="visible" rendition="line" xml:id="WoE_line_104v_05"/>
+        <zone corresp="#WoE_lb_104v_06" ulx="127" uly="191" lrx="320" lry="228" rend="visible" rendition="line" xml:id="WoE_line_104v_06"/>
+        <zone corresp="#WoE_lb_104v_07" ulx="145" uly="220" lrx="295" lry="255" rend="visible" rendition="line" xml:id="WoE_line_104v_07"/>
+        <zone corresp="#WoE_lb_104v_08" ulx="158" uly="255" lrx="509" lry="290" rend="visible" rendition="line" xml:id="WoE_line_104v_08"/>
+        <zone corresp="#WoE_lb_104v_09" ulx="149" uly="286" lrx="525" lry="321" rend="visible" rendition="line" xml:id="WoE_line_104v_09"/>
+        <zone corresp="#WoE_lb_104v_10" ulx="121" uly="318" lrx="289" lry="350" rend="visible" rendition="line" xml:id="WoE_line_104v_10"/>
+        <zone corresp="#WoE_lb_104v_11" ulx="123" uly="351" lrx="270" lry="382" rend="visible" rendition="line" xml:id="WoE_line_104v_11"/>
+        <zone corresp="#WoE_lb_104v_12" ulx="119" uly="386" lrx="288" lry="412" rend="visible" rendition="line" xml:id="WoE_line_104v_12"/>
+        <zone corresp="#WoE_lb_104v_13" ulx="119" uly="406" lrx="286" lry="440" rend="visible" rendition="line" xml:id="WoE_line_104v_13"/>
+        <zone corresp="#WoE_lb_104v_14" ulx="123" uly="433" lrx="300" lry="471" rend="visible" rendition="line" xml:id="WoE_line_104v_14"/>
+        <zone corresp="#WoE_lb_104v_15" ulx="124" uly="472" lrx="291" lry="504" rend="visible" rendition="line" xml:id="WoE_line_104v_15"/>
+        <zone corresp="#WoE_lb_104v_16" ulx="135" uly="501" lrx="301" lry="533" rend="visible" rendition="line" xml:id="WoE_line_104v_16"/>
+        <zone corresp="#WoE_lb_104v_17" ulx="120" uly="531" lrx="293" lry="563" rend="visible" rendition="line" xml:id="WoE_line_104v_17"/>
+        <zone corresp="#WoE_lb_104v_18" ulx="120" uly="563" lrx="213" lry="595" rend="visible" rendition="line" xml:id="WoE_line_104v_18"/>
+        <zone corresp="#WoE_lb_104v_19" ulx="100" uly="593" lrx="527" lry="638" rend="visible" rendition="line" xml:id="WoE_line_104v_19"/>
+        <zone corresp="#WoE_lb_104v_20" ulx="123" uly="626" lrx="502" lry="663" rend="visible" rendition="line" xml:id="WoE_line_104v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_14" corresp="#WoE_14">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.14.jpg"/>
+       <zone corresp="#WoE_lb_105r_01" ulx="90" uly="37" lrx="299" lry="79" rend="visible" rendition="line" xml:id="WoE_line_105r_01"/>
+        <zone corresp="#WoE_lb_105r_02" ulx="90" uly="72" lrx="264" lry="109" rend="visible" rendition="line" xml:id="WoE_line_105r_02"/>
+        <zone corresp="#WoE_lb_105r_03" ulx="88" uly="103" lrx="210" lry="133" rend="visible" rendition="line" xml:id="WoE_line_105r_03"/>
+        <zone corresp="#WoE_lb_105r_04" ulx="43" uly="130" lrx="280" lry="181" rend="visible" rendition="line" xml:id="WoE_line_105r_04"/>
+        <zone corresp="#WoE_lb_105r_05" ulx="86" uly="156" lrx="296" lry="189" rend="visible" rendition="line" xml:id="WoE_line_105r_05"/>
+        <zone corresp="#WoE_lb_105r_06" ulx="87" uly="186" lrx="279" lry="220" rend="visible" rendition="line" xml:id="WoE_line_105r_06"/>
+        <zone corresp="#WoE_lb_105r_07" ulx="87" uly="210" lrx="465" lry="256" rend="visible" rendition="line" xml:id="WoE_line_105r_07"/>
+        <zone corresp="#WoE_lb_105r_08" ulx="86" uly="247" lrx="464" lry="286" rend="visible" rendition="line" xml:id="WoE_line_105r_08"/>
+        <zone corresp="#WoE_lb_105r_09" ulx="87" uly="276" lrx="464" lry="314" rend="visible" rendition="line" xml:id="WoE_line_105r_09"/>
+        <zone corresp="#WoE_lb_105r_10" ulx="40" uly="524" lrx="481" lry="618" rend="visible" rendition="line" xml:id="WoE_line_105r_10"/>
+        <zone corresp="#WoE_lb_105r_11" ulx="95" uly="553" lrx="476" lry="598" rend="visible" rendition="line" xml:id="WoE_line_105r_11"/>
+        <zone corresp="#WoE_lb_105r_12" ulx="95" uly="586" lrx="488" lry="632" rend="visible" rendition="line" xml:id="WoE_line_105r_12"/>
+        <zone corresp="#WoE_lb_105_13" ulx="97" uly="617" lrx="484" lry="660" rend="visible" rendition="line" xml:id="WoE_line_105r_13"/>
+    </surface>
+    <surface xml:id="WoE_surf_15" corresp="#WoE_15">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.15.jpg"/>
+       <zone corresp="#WoE_lb_105v_01" ulx="165" uly="41" lrx="316" lry="73" rend="visible" rendition="line" xml:id="WoE_line_105v_01"/>
+        <zone corresp="#WoE_lb_105v_02" ulx="149" uly="64" lrx="297" lry="96" rend="visible" rendition="line" xml:id="WoE_line_105v_02"/>
+        <zone corresp="#WoE_lb_105v_03" ulx="146" uly="83" lrx="297" lry="123" rend="visible" rendition="line" xml:id="WoE_line_105v_03"/>
+        <zone corresp="#WoE_lb_105v_04" ulx="161" uly="123" lrx="298" lry="152" rend="visible" rendition="line" xml:id="WoE_line_105v_04"/>
+        <zone corresp="#WoE_lb_105v_05" ulx="142" uly="150" lrx="304" lry="181" rend="visible" rendition="line" xml:id="WoE_line_105v_05"/>
+        <zone corresp="#WoE_lb_105v_06" ulx="141" uly="180" lrx="299" lry="216" rend="visible" rendition="line" xml:id="WoE_line_105v_06"/>
+        <zone corresp="#WoE_lb_105v_07" ulx="153" uly="210" lrx="316" lry="248" rend="visible" rendition="line" xml:id="WoE_line_105v_07"/>
+        <zone corresp="#WoE_lb_105v_08" ulx="155" uly="245" lrx="310" lry="280" rend="visible" rendition="line" xml:id="WoE_line_105v_08"/>
+        <zone corresp="#WoE_lb_105v_09" ulx="163" uly="274" lrx="313" lry="313" rend="visible" rendition="line" xml:id="WoE_line_105v_09"/>
+        <zone corresp="#WoE_lb_105v_10" ulx="135" uly="309" lrx="316" lry="340" rend="visible" rendition="line" xml:id="WoE_line_105v_10"/>
+        <zone corresp="#WoE_lb_105v_11" ulx="136" uly="338" lrx="311" lry="370" rend="visible" rendition="line" xml:id="WoE_line_105v_11"/>
+        <zone corresp="#WoE_lb_105v_12" ulx="144" uly="370" lrx="548" lry="410" rend="visible" rendition="line" xml:id="WoE_line_105v_12"/>
+        <zone corresp="#WoE_lb_105v_13" ulx="137" uly="397" lrx="313" lry="435" rend="visible" rendition="line" xml:id="WoE_line_105v_13"/>
+        <zone corresp="#WoE_lb_105v_14" ulx="140" uly="428" lrx="314" lry="463" rend="visible" rendition="line" xml:id="WoE_line_105v_14"/>
+        <zone corresp="#WoE_lb_105v_15" ulx="163" uly="455" lrx="306" lry="495" rend="visible" rendition="line" xml:id="WoE_line_105v_15"/>
+        <zone corresp="#WoE_lb_105v_16" ulx="154" uly="491" lrx="302" lry="527" rend="visible" rendition="line" xml:id="WoE_line_105v_16"/>
+        <zone corresp="#WoE_lb_105v_17" ulx="139" uly="521" lrx="312" lry="559" rend="visible" rendition="line" xml:id="WoE_line_105v_17"/>
+        <zone corresp="#WoE_lb_105v_18" ulx="140" uly="553" lrx="317" lry="592" rend="visible" rendition="line" xml:id="WoE_line_105v_18"/>
+        <zone corresp="#WoE_lb_105v_19" ulx="140" uly="587" lrx="321" lry="617" rend="visible" rendition="line" xml:id="WoE_line_105v_19"/>
+        <zone corresp="#WoE_lb_105v_20" ulx="139" uly="618" lrx="306" lry="654" rend="visible" rendition="line" xml:id="WoE_line_105v_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_16" corresp="#WoE_16">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.16.jpg"/>
+       <zone corresp="#WoE_lb_106r_01" ulx="101" uly="42" lrx="464" lry="83" rend="visible" rendition="line" xml:id="WoE_line_106r_01"/>
+        <zone corresp="#WoE_lb_106r_02" ulx="101" uly="71" lrx="443" lry="107" rend="visible" rendition="line" xml:id="WoE_line_106r_02"/>
+        <zone corresp="#WoE_lb_106r_03" ulx="101" uly="99" lrx="307" lry="134" rend="visible" rendition="line" xml:id="WoE_line_106r_03"/>
+        <zone corresp="#WoE_lb_106r_04" ulx="55" uly="129" lrx="299" lry="192" rend="visible" rendition="line" xml:id="WoE_line_106r_04"/>
+        <zone corresp="#WoE_lb_106r_05" ulx="102" uly="160" lrx="300" lry="196" rend="visible" rendition="line" xml:id="WoE_line_106r_05"/>
+        <zone corresp="#WoE_lb_106r_06" ulx="100" uly="192" lrx="290" lry="227" rend="visible" rendition="line" xml:id="WoE_line_106r_06"/>
+        <zone corresp="#WoE_lb_106r_07" ulx="99" uly="221" lrx="295" lry="257" rend="visible" rendition="line" xml:id="WoE_line_106r_07"/>
+        <zone corresp="#WoE_lb_106r_08" ulx="99" uly="255" lrx="298" lry="289" rend="visible" rendition="line" xml:id="WoE_line_106r_08"/>
+        <zone corresp="#WoE_lb_106r_09" ulx="98" uly="286" lrx="296" lry="322" rend="visible" rendition="line" xml:id="WoE_line_106r_09"/>
+        <zone corresp="#WoE_lb_106r_10" ulx="47" uly="307" lrx="296" lry="361" rend="visible" rendition="line" xml:id="WoE_line_106r_10"/>
+        <zone corresp="#WoE_lb_106r_11" ulx="96" uly="351" lrx="488" lry="391" rend="visible" rendition="line" xml:id="WoE_line_106r_11"/>
+        <zone corresp="#WoE_lb_106r_12" ulx="97" uly="382" lrx="257" lry="416" rend="visible" rendition="line" xml:id="WoE_line_106r_12"/>
+        <zone corresp="#WoE_lb_106r_13" ulx="97" uly="414" lrx="264" lry="448" rend="visible" rendition="line" xml:id="WoE_line_106r_13"/>
+        <zone corresp="#WoE_lb_106r_14" ulx="95" uly="445" lrx="265" lry="477" rend="visible" rendition="line" xml:id="WoE_line_106r_14"/>
+        <zone corresp="#WoE_lb_106r_15" ulx="97" uly="475" lrx="254" lry="509" rend="visible" rendition="line" xml:id="WoE_line_106r_15"/>
+        <zone corresp="#WoE_lb_106r_16" ulx="98" uly="509" lrx="263" lry="542" rend="visible" rendition="line" xml:id="WoE_line_106r_16"/>
+        <zone corresp="#WoE_lb_106r_17" ulx="98" uly="538" lrx="265" lry="573" rend="visible" rendition="line" xml:id="WoE_line_106r_17"/>
+        <zone corresp="#WoE_lb_106r_18" ulx="96" uly="572" lrx="249" lry="608" rend="visible" rendition="line" xml:id="WoE_line_106r_18"/>
+        <zone corresp="#WoE_lb_106r_19" ulx="96" uly="605" lrx="260" lry="637" rend="visible" rendition="line" xml:id="WoE_line_106r_19"/>
+        <zone corresp="#WoE_lb_106r_20" ulx="95" uly="637" lrx="261" lry="672" rend="visible" rendition="line" xml:id="WoE_line_106r_20"/>
+    </surface>
+    <surface xml:id="WoE_surf_17" corresp="#WoE_17">
+      <graphic height="787px" width="608px" url="data\images\single\Fol.17.jpg"/>
+       <zone corresp="#WoE_lb_106v_01" ulx="162" uly="35" lrx="322" lry="68" rend="visible" rendition="line" xml:id="WoE_line_106v_01"/>
+        <zone corresp="#WoE_lb_106v_02" ulx="154" uly="65" lrx="302" lry="99" rend="visible" rendition="line" xml:id="WoE_line_106v_02"/>
+        <zone corresp="#WoE_lb_106v_03" ulx="147" uly="94" lrx="312" lry="125" rend="visible" rendition="line" xml:id="WoE_line_106v_03"/>
+        <zone corresp="#WoE_lb_106v_04" ulx="142" uly="123" lrx="333" lry="148" rend="visible" rendition="line" xml:id="WoE_line_106v_04"/>
+        <zone corresp="#WoE_lb_106v_05" ulx="157" uly="151" lrx="325" lry="190" rend="visible" rendition="line" xml:id="WoE_line_106v_05"/>
+        <zone corresp="#WoE_lb_106v_06" ulx="161" uly="185" lrx="322" lry="219" rend="visible" rendition="line" xml:id="WoE_line_106v_06"/>
+        <zone corresp="#WoE_lb_106v_07" ulx="142" uly="217" lrx="326" lry="243" rend="visible" rendition="line" xml:id="WoE_line_106v_07"/>
+        <zone corresp="#WoE_lb_106v_08" ulx="157" uly="244" lrx="325" lry="281" rend="visible" rendition="line" xml:id="WoE_line_106v_08"/>
+        <zone corresp="#WoE_lb_106v_09" ulx="154" uly="275" lrx="332" lry="313" rend="visible" rendition="line" xml:id="WoE_line_106v_09"/>
+        <zone corresp="#WoE_lb_106v_10" ulx="145" uly="308" lrx="529" lry="346" rend="visible" rendition="line" xml:id="WoE_line_106v_10"/>
+        <zone corresp="#WoE_lb_106v_11" ulx="147" uly="340" lrx="430" lry="381" rend="visible" rendition="line" xml:id="WoE_line_106v_11"/>
+        <zone corresp="#WoE_lb_106v_12" ulx="117" uly="380" lrx="368" lry="415" rend="visible" rendition="line" xml:id="WoE_line_106v_12"/>
+        <zone corresp="#WoE_lb_106v_13" ulx="146" uly="404" lrx="371" lry="439" rend="visible" rendition="line" xml:id="WoE_line_106v_13"/>
+        <zone corresp="#WoE_lb_106v_14" ulx="148" uly="436" lrx="367" lry="470" rend="visible" rendition="line" xml:id="WoE_line_106v_14"/>
+        <zone corresp="#WoE_lb_106v_15" ulx="148" uly="469" lrx="316" lry="506" rend="visible" rendition="line" xml:id="WoE_line_106v_15"/>
+        <zone corresp="#WoE_lb_106v_16" ulx="157" uly="504" lrx="349" lry="538" rend="visible" rendition="line" xml:id="WoE_line_106v_16"/>
+        <zone corresp="#WoE_lb_106v_17" ulx="142" uly="534" lrx="370" lry="565" rend="visible" rendition="line" xml:id="WoE_line_106v_17"/>
+        <zone corresp="#WoE_lb_106v_18" ulx="142" uly="562" lrx="269" lry="599" rend="visible" rendition="line" xml:id="WoE_line_106v_18"/>
+        <zone corresp="#WoE_lb_106v_19" ulx="146" uly="595" lrx="253" lry="629" rend="visible" rendition="line" xml:id="WoE_line_106v_19"/>
+    </surface>
+  </facsimile>
+   
+   <text n="Wonders of the East" subtype="edition_text" type="prose" xml:id="Text_WoE">
+       <body>
+     <div>
+        <pb facs="data/images/single/Fol.1.jpg" n="Folio 98v" xml:id="WoE_01"/> 
+        <l n="1"><lb facs="#WoE_line_98v_01" xml:id="WoE_lb_98v_01" n="1"/><choice><orig>S eoland buend</orig><reg>Seo landbuend</reg></choice> <choice><orig></orig><corr>[is]</corr></choice> on f<g ref="#rlong"/>uman</l>
+        <l n="2"><lb facs="#WoE_line_98v_02" xml:id="WoE_lb_98v_02" n="2"/><choice><orig><g ref="#rlong"/>om</orig><reg>from</reg></choice> <g ref="#capa"/>n<g ref="#tins"/>imolime þæm</l>
+        <l n="3"><lb facs="#WoE_line_98v_03" xml:id="WoE_lb_98v_03" n="3"/><choice><orig>ande</orig><reg>lande</reg></choice><g ref="#semicolon"/> þæ<g ref="#slong"/> lande<g ref="#slong"/> i<g ref="#slong"/> on <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+        <l n="4"><lb facs="#WoE_line_98v_04" xml:id="WoE_lb_98v_04" n="4"/><g ref="#rlong"/>ime þæ<g ref="#slong"/> læ<g ref="#slong"/><g ref="#slong"/>an <choice><orig>mil <g ref="#gins"/>e</orig><reg>milge-</reg></choice></l>
+        <l n="5"><lb facs="#WoE_line_98v_05" xml:id="WoE_lb_98v_05" n="5"/><choice><orig>ele<g ref="#slong"/></orig><reg>[t]eles</reg></choice> <g ref="middot"/> þe <g ref="#slong"/><g ref="#tins"/>adio ha<g ref="#tins"/><g ref="#tins"/>e</l>
+        <l n="6"><lb facs="#WoE_line_98v_06" xml:id="WoE_lb_98v_06" n="6"/>fif hund<g ref="middotcomma"/> <g ref="#ond"/> þæ<g ref="#slong"/> miclan þe leone<g ref="#slong"/> ha<g ref="#tins"/><g ref="#tins"/>e þ<g ref="#rlong"/>eo</l>
+        <l n="7"><lb facs="#WoE_line_98v_07" xml:id="WoE_lb_98v_07" n="7"/>hund <g ref="#ond"/> eah<g ref="#tins"/>a <g ref="#ond"/><g ref="middotspace"/>lx·<g ref="fullstop"/> On þæm ealande bið micel</l>
+        <l n="8"><lb facs="#WoE_line_98v_08" xml:id="WoE_lb_98v_08" n="8"/>mæne<g ref="#gins"/>eo <g ref="#slong"/>ceapa<g ref="semicolon"/> <g ref="#ond"/> þanon is <g ref="#tins"/>o <g ref="capb"/>abilonian þæ<g ref="#slong"/></l>
+        <l n="9"><lb facs="#WoE_line_98v_09" xml:id="WoE_lb_98v_09" n="9"/>læ<g ref="#slong"/><g ref="#slong"/>an mil <g ref="#gins"/>e <g ref="#tins"/>æle<g ref="#slong"/> <g ref="#slong"/><g ref="#tins"/>adio hund <g ref="#tins"/>eonti<g ref="#gins"/> <g ref="middot"/><g ref="#ond"/></l>
+        <l n="10"><lb facs="#WoE_line_98v_10" xml:id="WoE_lb_98v_10" n="10"/>eah<g ref="#tins"/>a <g ref="#ond"/><g ref="middotspace"/>lx·<g ref="comma"/> <g ref="#ond"/> þæ<g ref="#slong"/> miclan mil <g ref="#gins"/>e <g ref="tins"/>æle<g ref="#slong"/> þe leone<g ref="#slong"/></l>
+        <l n="11"><lb facs="#WoE_line_98v_11" xml:id="WoE_lb_98v_11" n="11"/>ha<g ref="#tins"/><g ref="#tins"/>e fif<g ref="#tins"/><g ref="#ydot"/>ne  <g ref="#ond"/> <choice><orig>hund <g ref="#tins"/>eon<g ref="#tins"/>i<g ref="#gins"/></orig><reg>hund<g ref="#tins"/>eontig</reg></choice><g ref="fullstop"/></l>
+        <l n="12"><lb facs="#WoE_line_98v_12" xml:id="WoE_lb_98v_12" n="12"/><choice><orig>S</orig><corr>S[eo]</corr></choice> <choice><orig>lond buni<g ref="#slong"/></orig><reg>londbunis</reg></choice> i<g ref="#slong"/> <g ref="#slong"/><g ref="#wynn"/><g ref="ydot"/>ðu<g ref="#slong"/><g ref="#tins"/></l>
+        <l n="13"><lb facs="#WoE_line_98v_13" xml:id="WoE_lb_98v_13" n="13"/><choice><orig>e<g ref="#rlong"/>e monnū</orig><corr>[c]eremonnum</corr></choice> <g ref="#gins"/>e<g ref="#slong"/>e<g ref="#tins"/>ed<g ref="fullstop"/></l>
+        <l n="14"><lb facs="#WoE_line_98v_14" xml:id="WoE_lb_98v_14" n="14"/><g ref="capthorn"/>æ<g ref="#rlong"/> beoð <g ref="#wynn"/>eð<g ref="#rlong"/>a<g ref="#slong"/> <choice><orig>acen</orig><reg>acen-</reg></choice></l>
+        <l n="15"><lb facs="#WoE_line_98v_15" xml:id="WoE_lb_98v_15" n="15"/>ned on oxna micelne<g ref="#slong"/><g ref="semicolon"/></l>
+        <l n="16"><lb facs="#WoE_line_98v_16" xml:id="WoE_lb_98v_16" n="16"/><g ref="#slong"/>e <choice><orig>þabuað</orig><reg>þa buað</reg></choice> oðmeda</l>
+        <l n="17"><lb facs="#WoE_line_98v_17" xml:id="WoE_lb_98v_17" n="17"/>bu<g ref="#rlong"/>h<g ref="fullstop"/> <g ref="capthorn"/>æ<g ref="#rlong"/>e bu<g ref="#rlong"/><g ref="#gins"/>e nama i<g ref="#slong"/> <choice><orig>a<g ref="#rlong"/>che medon</orig><reg>Archemedon</reg></choice><g ref="semicolon"/></l>
+        <l n="18"><lb facs="#WoE_line_98v_18" xml:id="WoE_lb_98v_18" n="18"/><g ref="#slong"/>io i<g ref="#slong"/> mæ<g ref="#slong"/><g ref="tins"/> <choice><orig><g ref="#tins"/>obabilonia</orig><reg>to Babilonia</reg></choice> bu<g ref="#rlong"/>h<g ref="fullstop"/> <g ref="capthorn"/>onon <g ref="#slong"/><g ref="ydot"/>ndon</l>
+        <l n="19"><lb facs="#WoE_line_98v_19" xml:id="WoE_lb_98v_19" n="19"/>þæ<g ref="#slong"/> læ<g ref="#slong"/><g ref="#slong"/>an <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>æle<g ref="#slong"/></orig><reg>milgetæles</reg></choice> <g ref="#slong"/><g ref="#tins"/>adi<g ref="middotspace"/>ccc<g ref="middotnospace"/> <g ref="#ond"/> þæ<g ref="#slong"/></l>
+        <l n="20"><lb facs="#WoE_line_98v_20" xml:id="WoE_lb_98v_20" n="20"/>ma<g ref="#rlong"/>an þe leon ha<g ref="#tins"/><g ref="#tins"/>e ·cc<g ref="middotnospace"/> f<g ref="#rlong"/>om <choice><orig>a<g ref="#rlong"/>che medon</orig><reg>Archemedon</reg></choice><g ref="fullstop"/></l>  
+     </div>
+     <div>
+         <pb facs="data/images/single/Fol.2.jpg" n="Folio 99r" xml:id="WoE_02"/>
+          <l n="1"><lb facs="#WoE_line_99r_01" xml:id="WoE_lb_99r_01" n="1"/><g ref="#capthorn"/>æ<g ref="#rlong"/> <g ref="#slong"/><g ref="#ydot"/>ndon <choice><orig>þamiclan</orig><reg>þa miclan</reg></choice> mæ<g ref="#rlong"/>ða <g ref="#that"/> <g ref="#slong"/><g ref="#ydot"/>ndon þa <choice><orig><g ref="#wynn"/>eo<g ref="#rlong"/></orig><corr>weor[c]</corr></choice></l>
+          <l n="2"><lb facs="#WoE_line_99r_02" xml:id="WoE_lb_99r_02" n="2"/><choice><orig>þe<g ref="#slong"/>e</orig><reg>þe se</reg></choice> micla macedoni<g ref="#slong"/>ca <g ref="#capa"/>lex<g ref="#slong"/>ande<g ref="#rlong"/> he<g ref="#tins"/> <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+          <l n="3"><lb facs="#WoE_line_99r_03" xml:id="WoE_lb_99r_03" n="3"/><g ref="#wynn"/><g ref="#ydot"/><g ref="#rlong"/>can<g ref="fullstop"/> <g ref="middot"/> <choice><orig><g ref="#that"/></orig><reg>Þæt</reg></choice> land i<g ref="#slong"/> <choice><orig>onlen<g ref="#gins"/>e</orig><reg>on lenge</reg></choice> <g ref="middot"/> <g ref="#ond"/> <choice><orig>onb<g ref="#rlong"/>æde</orig><reg>on bræde</reg></choice> ·cc<g ref="middotnospace"/></l>
+          <l n="4"><lb facs="#WoE_line_99r_04" xml:id="WoE_lb_99r_04" n="4"/>þæ<g ref="#slong"/> læ<g ref="#slong"/>san <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>æle<g ref="#slong"/></orig><reg>milgetæles</reg></choice> <g ref="#slong"/><g ref="#tins"/>adi <g ref="#ond"/> þæ<g ref="#slong"/> miclan <choice><orig>þele</orig><corr>þe le[o]</corr></choice></l>
+          <l n="5"><lb facs="#WoE_line_99r_05" xml:id="WoE_lb_99r_05" n="5"/>ha<g ref="#tins"/><g ref="#tins"/>e ·c<g ref="#middot"/>xxx<g ref="#addmiddot"/> <g ref="#ond"/> healf mil</l><g ref="fullstop"/>
+          <l n="6"><lb facs="#WoE_line_99r_06" xml:id="WoE_lb_99r_06" n="6"/>Sum <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/> is mon fe<g ref="#rlong"/>eð <g ref="#tins"/>o</l>
+          <l n="7"><lb facs="#WoE_line_99r_07" xml:id="WoE_lb_99r_07" n="7"/>þæ<g ref="#rlong"/>e <choice><orig><g ref="#rlong"/>eadan <g ref="#slong"/>æ</orig><reg>Readan Sæ</reg></choice><g ref="comma"/> <g ref="#slong"/>eo i<g ref="#slong"/></l>
+          <l n="8"><lb facs="#WoE_line_99r_08" xml:id="WoE_lb_99r_08" n="8"/>ha<g ref="#tins"/>en <choice><orig>len<g ref="#tins"/>ibel <g ref="#slong"/>inea</orig><reg>Lentibelsinea</reg></choice><g ref="fullstop"/> <g ref="#capthorn"/>æm</l>
+          <l n="9"><lb facs="#WoE_line_99r_09" xml:id="WoE_lb_99r_09" n="9"/>beoð henna acenned onlice</l>
+          <l n="10"><lb facs="#WoE_line_99r_10" xml:id="WoE_lb_99r_10" n="10"/>þonne þe mid u<g ref="#slong"/> beoð <choice><orig><g ref="#rlong"/>ea de<g ref="#slong"/></orig><reg>reades</reg></choice></l>
+          <l n="11"><lb facs="#WoE_line_99r_11" xml:id="WoE_lb_99r_11" n="11"/>heo<g ref="#wynn"/>e<g ref="#slong"/><g ref="fullstop"/><g ref="middot"/> <choice><orig><g ref="#gins"/>if</orig><reg>Gif</reg></choice> hi h<g ref="#wynn"/><g ref="#ydot"/>lc man niman <g ref="#wynn"/>ile oþþe <choice><orig>hi</orig><corr>h[yra]</corr></choice></l>
+          <l n="12"><lb facs="#WoE_line_99r_12" xml:id="WoE_lb_99r_12" n="12"/><choice><orig>æ<g ref="#tins"/> h<g ref="#rlong"/>ineð</orig><reg>æthrineð</reg></choice> þonne <choice><orig>fo<g ref="#rlong"/> bæ<g ref="#rlong"/>nað</orig><reg>forbærnað</reg></choice> h<g ref="#ydot"/> <g ref="#slong"/>ona <choice><orig>ea h</orig><corr>ea[l his]</corr></choice></l>
+          <l n="13"><lb facs="#WoE_line_99r_13" xml:id="WoE_lb_99r_13" n="14"/>lic<g ref="fullstop"/> <choice><orig><g ref="#that"/></orig><reg>Þæt</reg></choice> <g ref="#slong"/>yndon <choice><orig>un<g ref="#gins"/>e f<g ref="#rlong"/>æ<g ref="#gins"/>elicu</orig><reg>ungefrægelicu</reg></choice> liblac<g ref="fullstop"/> <g ref="middot"/> </l>
+          <l n="14"><lb facs="#WoE_line_99r_14" xml:id="WoE_lb_99r_14" n="14"/>Eac þonne þæ<g ref="#rlong"/> beoð <g ref="#wynn"/>ildeo<g ref="#rlong"/></l>
+          <l n="15"><lb facs="#WoE_line_99r_15" xml:id="WoE_lb_99r_15" n="15"/>acenned<g ref="fullstop"/><g ref="middot"/> <g ref="#capthorn"/>a deo<g ref="#rlong"/> þonne</l>
+          <l n="16"><lb facs="#WoE_line_99r_16" xml:id="WoE_lb_99r_16" n="16"/>h<g ref="#ydot"/> manne<g ref="#slong"/> <g ref="#slong"/><g ref="#tins"/>efne <choice><orig><g ref="#gins"/>eh<g ref="#ydot"/>-</orig></choice></l>
+          <l n="17"><lb facs="#WoE_line_99r_17" xml:id="WoE_lb_99r_17" n="17"/><g ref="#rlong"/>að<g ref="comma"/> þonne fleoð h<g ref="#ydot"/> feo<g ref="#rlong"/><g ref="fullstop"/><g ref="middot"/></l>
+          <l n="18"><lb facs="#WoE_line_99r_18" xml:id="WoE_lb_99r_18" n="18"/><g ref="#capthorn"/>a deo<g ref="#rlong"/> habbað eah<g ref="#tins"/>a</l>
+          <l n="19"><lb facs="#WoE_line_99r_19" xml:id="WoE_lb_99r_19" n="19"/>fe<g ref="#tins"/><g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> <choice><orig><g ref="#wynn"/>æl c<g ref="#ydot"/><g ref="#rlong"/>ian</orig><reg>wælcyrian</reg></choice> ea<g ref="#gins"/>an<g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> <g ref="#tins"/><g ref="#wynn"/>a heafdu<g ref="fullstop"/> <choice><orig><g ref="#gins"/>if</orig><reg>Gif</reg></choice></l>
+          <l n="20"><lb facs="#WoE_line_99r_20" xml:id="WoE_lb_99r_20" n="20"/>him h<g ref="#wynn"/><g ref="#ydot"/>lc mon onfon <g ref="#wynn"/>ille<g ref="comma"/> þonne hie<g ref="#rlong"/>a lichoman</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.3.jpg" n="Folio 99v" xml:id="WoE_03"/>
+          <l n="1"><lb facs="#WoE_line_99v_01" xml:id="WoE_lb_99v_01" n="1"/><g ref="#that"/> h<g ref="#ydot"/> <choice><orig>on ælað</orig><reg>onælað</reg></choice><g ref="fullstop"/> <choice><orig><g ref="#that"/></orig><reg>Þæt</reg></choice> <g ref="#slong"/><g ref="#ydot"/>ndon þa <choice><orig>un <g ref="#gins"/>e f<g ref="#rlong"/>æ<g ref="#gins"/>elicu</orig><reg>ungefrægelicu</reg></choice> deo<g ref="#rlong"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="2"><lb facs="#WoE_line_99v_02" xml:id="WoE_lb_99v_02" n="2"/><choice><orig>o<g ref="#slong"/></orig><corr>[Ðe]os</corr></choice> <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/> hafað næd<g ref="#rlong"/>an<g ref="fullstop"/> <g ref="middot"/> <choice><orig>þa</orig><reg>Þa</reg></choice> næd<g ref="#rlong"/>an habbað</l>
+          <l n="3"><lb facs="#WoE_line_99v_03" xml:id="WoE_lb_99v_03" n="3"/><g ref="#tins"/><g ref="#wynn"/>a heafdu<g ref="comma"/> þa<g ref="#rlong"/>a ea<g ref="#gins"/>an <g ref="#slong"/>cinað nih<g ref="#tins"/>e<g ref="#slong"/> <g ref="#slong"/><g ref="#wynn"/>a</l>
+          <l n="4"><lb facs="#WoE_line_99v_04" xml:id="WoE_lb_99v_04" n="4"/>leoh<g ref="#tins"/>e <g ref="#slong"/><g ref="#wynn"/>a blæce<g ref="#rlong"/>n<g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="5"><lb facs="#WoE_line_99v_05" xml:id="WoE_lb_99v_05" n="5"/><choice><orig>nsumon</orig><corr>[O]n sumon</corr></choice> lande <choice><orig>eo<g ref="#slong"/>el a<g ref="#slong"/></orig><reg>eoselas</reg></choice></l>
+          <l n="6"><lb facs="#WoE_line_99v_06" xml:id="WoE_lb_99v_06" n="6"/>beoð acende þa habbað <g ref="#slong"/><g ref="#wynn"/>a</l>
+          <l n="7"><lb facs="#WoE_line_99v_07" xml:id="WoE_lb_99v_07" n="7"/>micle ho<g ref="#rlong"/>na<g ref="#slong"/> <g ref="#slong"/><g ref="#wynn"/>a oxan<g ref="fullstop"/></l>
+          <l n="8"><lb facs="#WoE_line_99v_08" xml:id="WoE_lb_99v_08" n="8"/><g ref="#capthorn"/>a <g ref="#slong"/><g ref="#ydot"/>ndon on þæ<g ref="#rlong"/>e mæ<g ref="#slong"/><g ref="#tins"/>an</l>
+          <l n="9"><lb facs="#WoE_line_99v_09" xml:id="WoE_lb_99v_09" n="9"/><choice><orig><g ref="#wynn"/>æ<g ref="#slong"/><g ref="#tins"/> me</orig><reg>wæstme</reg></choice> <g ref="#that"/> i<g ref="#slong"/> on þa <g ref="#slong"/>uð healfe</l>
+          <l n="10"><lb facs="#WoE_line_99v_10" xml:id="WoE_lb_99v_10" n="10"/>f<g ref="#rlong"/>om <choice><orig>babiloniā</orig><reg>Babiloniam</reg></choice><g ref="fullstop"/> <g ref="middot"/> <choice><orig>þabuað</orig><reg>Þa buað</reg></choice></l>
+          <l n="11"><lb facs="#WoE_line_99v_11" xml:id="WoE_lb_99v_11" n="11"/><choice><orig>o</orig><corr>[t]o</corr></choice> þæm <choice><orig><g ref="#rlong"/>eadan <g ref="#slong"/>æ</orig><reg>Readan Sæ</reg></choice><g ref="comma"/> fo<g ref="#rlong"/></l>
+          <l n="12"><lb facs="#WoE_line_99v_12" xml:id="WoE_lb_99v_12" n="12"/>þa<g ref="#rlong"/>a næd<g ref="#rlong"/>ena mæne<g ref="#gins"/>o</l>
+          <l n="13"><lb facs="#WoE_line_99v_13" xml:id="WoE_lb_99v_13" n="13"/>þe in þæm <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>um beoð <g ref="middot"/> þa ha<g ref="#tins"/><g ref="#tins"/>on <g ref="#capc"/>o<g ref="#rlong"/><g ref="#slong"/>ia<g ref="#slong"/><g ref="fullstop"/><g ref="middot"/></l>
+          <l n="14"><lb facs="#WoE_line_99v_14" xml:id="WoE_lb_99v_14" n="14"/><g ref="#capthorn"/>a habbað <g ref="#slong"/><g ref="#wynn"/>a micle ho<g ref="#rlong"/>na<g ref="#slong"/> <g ref="#slong"/><g ref="#wynn"/>a <g ref="#wynn"/>eðe<g ref="#rlong"/>a<g ref="#slong"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="15"><lb facs="#WoE_line_99v_15" xml:id="WoE_lb_99v_15" n="15"/><choice><orig><g ref="#gins"/>if</orig><reg>Gif</reg></choice> h<g ref="#ydot"/> h<g ref="#wynn"/>ilcne man <g ref="#slong"/>leað oþþe a <choice><orig>æ<g ref="#tins"/> h<g ref="#rlong"/>ineð</orig><reg>æthrineð</reg></choice></l>
+          <l n="16"><lb facs="#WoE_line_99v_16" xml:id="WoE_lb_99v_16" n="16"/>þonne <g ref="#slong"/><g ref="#wynn"/><g ref="#ydot"/>l<g ref="#tins"/>eð he <g ref="#slong"/>ona<g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="17"><lb facs="#WoE_line_99v_17" xml:id="WoE_lb_99v_17" n="17"/>On þam <choice><orig>landū</orig><reg>landum</reg></choice> bið pipo<g ref="#rlong"/>e<g ref="#slong"/> <choice><orig><g ref="#gins"/>enih<g ref="#tins"/> <g ref="#slong"/>um ni<g ref="#slong"/></orig><reg>genihtsumnis</reg></choice><g ref="fullstop"/></l>
+          <l n="18"><lb facs="#WoE_line_99v_18" xml:id="WoE_lb_99v_18" n="18"/><g ref="#capthorn"/>one pipo<g ref="#rlong"/> healdaþ <choice><orig>þanædd<g ref="#rlong"/>a</orig><corr>þa næddra[n]</corr></choice> on heo<g ref="#rlong"/>a</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.4.jpg" n="Folio 100r" xml:id="WoE_04"/>
+          <l n="1"><lb facs="#WoE_line_100r_01" xml:id="WoE_lb_100r_01" n="1"/><g ref="#gins"/>eneo<g ref="#rlong"/>ne<g ref="#slong"/><g ref="#slong"/>e<g ref="fullstop"/> <g ref="middot"/> <g ref="#capthorn"/>one pipo<g ref="#rlong"/> <choice><orig>mon<g ref="#slong"/><g ref="#wynn"/>a</orig><reg>mon swa</reg></choice> nimeð <g ref="#that"/></l>
+          <l n="2"><lb facs="#WoE_line_100r_02" xml:id="WoE_lb_100r_02" n="2"/>þa <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e mid fy<g ref="#rlong"/>e onæleð <g ref="#ond"/> <choice><orig>þanæd<g ref="#rlong"/>an</orig><reg>þa nædran</reg></choice> þonne</l>
+          <l n="3"><lb facs="#WoE_line_100r_03" xml:id="WoE_lb_100r_03" n="3"/><choice><orig>ofdune</orig><reg>of dune</reg></choice> on þa eo<g ref="#rlong"/>þan <g ref="#that"/> fleoð<g ref="semicolon"/> fo<g ref="#rlong"/>þon <choice><orig><g ref="#slong"/>epipo<g ref="#rlong"/></orig><reg>se pipor</reg></choice> bið</l>
+          <l n="4"><lb facs="#WoE_line_100r_04" xml:id="WoE_lb_100r_04" n="4"/><g ref="#slong"/><g ref="#wynn"/>ea<g ref="#rlong"/><g ref="#tins"/><g ref="fullstop"/> <g ref="#capf"/><g ref="#rlong"/>om <choice><orig>babiloniā</orig><reg>Babiloniam</reg></choice> oð <g ref="#capp"/>e<g ref="#rlong"/><g ref="#slong"/>iam <choice><orig>þabu<g ref="#rlong"/>h</orig><reg>þa burh</reg></choice> <g ref="middot"/> þa<g ref="#rlong"/></l>
+          <l n="5"><lb facs="#WoE_line_100r_05" xml:id="WoE_lb_100r_05" n="5"/>se pipo<g ref="#rlong"/> <g ref="#wynn"/>eaxeð i<g ref="#slong"/> þæ<g ref="#slong"/> læ<g ref="#slong"/><g ref="#slong"/>an <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice> þe</l>
+          <l n="6"><lb facs="#WoE_line_100r_06" xml:id="WoE_lb_100r_06" n="6"/><g ref="#slong"/><g ref="#tins"/>adia ha<g ref="#tins"/><g ref="#tins"/>e eah<g ref="#tins"/>a hund mila<g ref="fullstop"/> <g ref="middot"/> <g ref="#capo"/>f þæm i<g ref="#slong"/> <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+          <l n="7"><lb facs="#WoE_line_100r_07" xml:id="WoE_lb_100r_07" n="7"/><g ref="#tins"/>eald þæ<g ref="#slong"/> miclan <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice> þe leone<g ref="#slong"/> ha<g ref="#tins"/><g ref="#tins"/>e</l>
+          <l n="8"><lb facs="#WoE_line_100r_08" xml:id="WoE_lb_100r_08" n="8"/>·vi<g ref="middotspacerx"/>hund <g ref="#ond"/><g ref="middotspace"/>xxiii· <g ref="#ond"/> an healf mil<g ref="fullstop"/> <g ref="middot"/> Seo <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/> i<g ref="#slong"/> <choice><orig>un</orig><reg>un-</reg></choice></l>
+          <l n="9"><lb facs="#WoE_line_100r_09" xml:id="WoE_lb_100r_09" n="9"/><choice><orig><g ref="#wynn"/>æ<g ref="#slong"/><g ref="#tins"/>m be<g ref="#rlong"/>enlicu</orig><reg>wæstmberenlicu</reg></choice> fo<g ref="#rlong"/> þa<g ref="#rlong"/>a næd<g ref="#rlong"/>ena mæne<g ref="#gins"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="10"><lb facs="#WoE_line_100r_10" xml:id="WoE_lb_100r_10" n="10"/>Eac <g ref="#slong"/><g ref="#wynn"/><g ref="#ydot"/>lce þæ<g ref="#rlong"/> beoð cende</l>
+          <l n="11"><lb facs="#WoE_line_100r_11" xml:id="WoE_lb_100r_11" n="11"/><choice><orig>healf hundin<g ref="#gins"/>a<g ref="#slong"/></orig><reg>Healfhundingas</reg></choice> <choice><orig>þa<g ref="#slong"/>yndon</orig><reg>þa syndon</reg></choice></l>
+          <l n="12"><lb facs="#WoE_line_100r_12" xml:id="WoE_lb_100r_12" n="12"/>ha<g ref="#tins"/>ene  <g ref="#capc"/>onopena<g ref="#slong"/><g ref="fullstop"/> <g ref="#caph"/><g ref="#ydot"/> <choice><orig>hab</orig><reg>hab-</reg></choice></l>
+          <l n="13"><lb facs="#WoE_line_100r_13" xml:id="WoE_lb_100r_13" n="13"/>bað ho<g ref="#rlong"/><g ref="#slong"/>e<g ref="#slong"/> mana <g ref="#ond"/> eofe<g ref="#rlong"/>e<g ref="#slong"/></l>
+          <l n="14"><lb facs="#WoE_line_100r_14" xml:id="WoE_lb_100r_14" n="14"/><g ref="#tins"/>uxa<g ref="#slong"/> <g ref="#ond"/> hunda heafdu<g ref="comma"/> <g ref="#ond"/> <choice><orig>heo</orig><reg>heo-</reg></choice></l>
+          <l n="15"><lb facs="#WoE_line_100r_15" xml:id="WoE_lb_100r_15" n="15"/><g ref="#rlong"/>a o<g ref="#rlong"/>oð bið <g ref="#slong"/><g ref="#wynn"/><g ref="#ydot"/>lce f<g ref="#ydot"/><g ref="#rlong"/>e<g ref="#slong"/> le<g ref="#gins"/><g ref="fullstop"/></l>
+          <l n="16"><lb facs="#WoE_line_100r_16" xml:id="WoE_lb_100r_16" n="16"/><g ref="#capthorn"/>a<g ref="#slong"/> land beoð neah þæm <choice><orig>bu<g ref="#rlong"/></orig><reg>bur-</reg></choice></l>
+          <l n="17"><lb facs="#WoE_line_100r_17" xml:id="WoE_lb_100r_17" n="17"/><choice><orig><g ref="#gins"/>ū</orig><reg>gum</reg></choice> <choice><orig>þebeoð</orig><reg>þe beoð</reg></choice> eallum <choice><orig><g ref="#wynn"/>o<g ref="#rlong"/>ld <g ref="#wynn"/>e</orig><reg>worldwe-</reg></choice></l>
+          <l n="18"><lb facs="#WoE_line_100r_18" xml:id="WoE_lb_100r_18" n="18"/>lum <g ref="#gins"/>ef<g ref="#ydot"/>lled<g ref="comma"/> <g ref="#that"/> i<g ref="#slong"/> on þa <g ref="#slong"/>uð healfe <choice><orig>e<g ref="#gins"/><g ref="#ydot"/>p<g ref="#tins"/>a</orig><reg>Egypta-</reg></choice></l>
+          <l n="19"><lb facs="#WoE_line_100r_19" xml:id="WoE_lb_100r_19" n="19"/>na lande<g ref="#slong"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="20"><lb facs="#WoE_line_100r_20" xml:id="WoE_lb_100r_20" n="20"/><choice><orig>ON</orig><reg>On</reg></choice> sumon lande beoð men acende þa beoð</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.5.jpg" n="Folio 100v" xml:id="WoE_05"/>
+          <l n="1"><lb facs="#WoE_line_100v_01" xml:id="WoE_lb_100v_01" n="1"/>on len<g ref="#gins"/>e <g ref="#slong"/><g ref="#ydot"/>x fo<g ref="#tins"/>mæla<g ref="fullstop"/> <g ref="middot"/> <g ref="#caph"/>i habbað <choice><orig>bea<g ref="#rlong"/></orig><reg>bear-</reg></choice></l>
+          <l n="2"><lb facs="#WoE_line_100v_02" xml:id="WoE_lb_100v_02" n="2"/><choice><orig>a<g ref="#slong"/></orig><corr>[þ]as</corr></choice> oþ cneo<g ref="#wynn"/> <g ref="#slong"/>ide <g ref="#ond"/> feax oð helan<g ref="fullstop"/> <g ref="middot"/> <choice><orig>homo dubii</orig><reg>Homodubii</reg></choice></l>
+          <l n="3"><lb facs="#WoE_line_100v_03" xml:id="WoE_lb_100v_03" n="3"/>hy <g ref="#slong"/><g ref="#ydot"/>ndon ha<g ref="#tins"/>ene<g ref="comma"/> <g ref="#that"/> beoð <g ref="#tins"/><g ref="#wynn"/>imen<g ref="comma"/> <g ref="#ond"/> be h<g ref="#rlong"/>ea<g ref="#wynn"/>um</l>
+          <l n="4"><lb facs="#WoE_line_100v_04" xml:id="WoE_lb_100v_04" n="4"/>fixum h<g ref="#ydot"/> lifiað <g ref="#ond"/> þa e<g ref="#tins"/>aþ<g ref="fullstop"/></l>
+          <l n="5"><lb facs="#WoE_line_100v_05" xml:id="WoE_lb_100v_05" n="5"/>Capi ha<g ref="#tins"/><g ref="#tins"/>e <g ref="#slong"/>eo ea in þæ<g ref="#rlong"/>e ilcan <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e þe i<g ref="#slong"/></l>
+          <l n="6"><lb facs="#WoE_line_100v_06" xml:id="WoE_lb_100v_06" n="6"/>ha<g ref="#tins"/>en <choice><orig><g ref="#gins"/>o<g ref="#rlong"/><g ref="#gins"/>oneu<g ref="#slong"/></orig><reg>Gorgoneus</reg></choice><g ref="middotcomma"/> <g ref="#that"/> i<g ref="#slong"/> <choice><orig><g ref="#wynn"/>æl k<g ref="#ydot"/><g ref="#rlong"/><g ref="#gins"/>in<g ref="#gins"/></orig><reg>wælkyrging</reg></choice><g ref="fullstop"/> <g ref="#capthorn"/>æ<g ref="#rlong"/> beoð</l>
+          <l n="7"><lb facs="#WoE_line_100v_07" xml:id="WoE_lb_100v_07" n="7"/>cende æme<g ref="#tins"/>an <g ref="#slong"/><g ref="#wynn"/>a micle <g ref="#slong"/><g ref="#wynn"/>a hundas<g ref="fullstop"/> <g ref="#caph"/><g ref="#ydot"/> habbaþ</l>
+          <l n="8"><lb facs="#WoE_line_100v_08" xml:id="WoE_lb_100v_08" n="8"/><choice><orig><g ref="#wynn"/>elce</orig><corr>[s]welce</corr></choice> <g ref="#slong"/><g ref="#wynn"/>a <choice><orig><g ref="#gins"/><g ref="#rlong"/>æs hoppan</orig><reg>græshoppan</reg></choice><g ref="comma"/> h<g ref="#ydot"/> <g ref="#slong"/><g ref="#ydot"/>ndon <g ref="#rlong"/>eade<g ref="#slong"/> heo<g ref="#wynn"/>e<g ref="#slong"/></l>
+          <l n="9"><lb facs="#WoE_line_100v_09" xml:id="WoE_lb_100v_09" n="9"/><choice><orig></orig><corr>[and]</corr></choice> blace<g ref="#slong"/> heo<g ref="#wynn"/>e<g ref="#slong"/><g ref="fullstop"/> <g ref="#capthorn"/>a æme<g ref="#tins"/><g ref="#tins"/>an delfað <g ref="#gins"/>old up</l>
+          <l n="10"><lb facs="#WoE_line_100v_10" xml:id="WoE_lb_100v_10" n="10"/>of eo<g ref="#rlong"/>þan f<g ref="#rlong"/>om fo<g ref="#rlong"/>an nih<g ref="#tins"/>e <choice><orig>oðða</orig><reg>oð ða</reg></choice> fif<g ref="#tins"/>an <g ref="#tins"/>id</l>
+          <l n="11"><lb facs="#WoE_line_100v_11" xml:id="WoE_lb_100v_11" n="11"/>dæ<g ref="#gins"/>e<g ref="#slong"/><g ref="fullstop"/><g ref="middot"/> <choice><orig>þamen</orig><reg>Þa men</reg></choice> þe <g ref="#tins"/>o þon d<g ref="#ydot"/><g ref="#rlong"/><g ref="#slong"/><g ref="#tins"/>i<g ref="#gins"/>e beoð <g ref="#that"/> hi þæ<g ref="#tins"/></l>
+          <l n="12"><lb facs="#WoE_line_100v_12" xml:id="WoE_lb_100v_12" n="12"/><g ref="#gins"/>old nimen<g ref="comma"/> þonne lædað <choice><orig>h<g ref="#ydot"/>mid</orig><reg>hy mid</reg></choice> him olfendan</l>
+          <l n="13"><lb facs="#WoE_line_100v_13" xml:id="WoE_lb_100v_13" n="13"/>me<g ref="#rlong"/>an mid h<g ref="#ydot"/><g ref="#rlong"/>a folan <g ref="#ond"/> <g ref="#slong"/><g ref="#tins"/>edan<g ref="fullstop"/><g ref="middot"/> <choice><orig>þafolan</orig><reg>Þa folan</reg></choice> <choice><orig>hy<g ref="#gins"/>e</orig><reg>hy ge-</reg></choice></l>
+          <l n="14"><lb facs="#WoE_line_100v_14" xml:id="WoE_lb_100v_14" n="14"/><g ref="#slong"/>ælað æ<g ref="#rlong"/> h<g ref="#ydot"/> ofe<g ref="#rlong"/> þa ea fa<g ref="#rlong"/>en<g ref="fullstop"/> <g ref="middot"/> <g ref="#capthat"/> <g ref="#gins"/>old hio <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+          <l n="15"><lb facs="#WoE_line_100v_15" xml:id="WoE_lb_100v_15" n="15"/>fæ<g ref="#tins"/>að on þa me<g ref="#rlong"/>an<g ref="middot"/> <g ref="#ond"/> h<g ref="#ydot"/> <g ref="#slong"/>ylfe on<g ref="#slong"/>i<g ref="#tins"/><g ref="#tins"/>að <g ref="#ond"/> þa</l>
+          <l n="16"><lb facs="#WoE_line_100v_16" xml:id="WoE_lb_100v_16" n="16"/><g ref="#slong"/><g ref="#tins"/>edan þæ<g ref="#rlong"/> fo<g ref="#rlong"/>læ<g ref="#tins"/>að<g ref="fullstop"/><g ref="middot"/> <g ref="#capthorn"/>onne þa æme<g ref="#tins"/><g ref="#tins"/>an</l>
+          <l n="17"><lb facs="#WoE_line_100v_17" xml:id="WoE_lb_100v_17" n="17"/>h<g ref="#ydot"/> onfindað<g ref="comma"/> <g ref="#ond"/> þa h<g ref="#wynn"/>ile þe þa æme<g ref="#tins"/><g ref="#tins"/>an embe</l>
+          <l n="18"><lb facs="#WoE_line_100v_18" xml:id="WoE_lb_100v_18" n="18"/>þone <choice><orig><g ref="#slong"/><g ref="#tins"/>e dan</orig><reg>stedan</reg></choice> aby<g ref="#slong"/><g ref="#gins"/>ode beoð<g ref="middotcomma"/> <choice><orig>Þonne</orig><reg>þonne</reg></choice> <choice><orig>þamen</orig><reg>þa men</reg></choice></l>
+          <l n="19"><lb facs="#WoE_line_100v_19" xml:id="WoE_lb_100v_19" n="19"/>mid þam me<g ref="#rlong"/>un <g ref="#ond"/> mid þam <g ref="#gins"/>olde ofe<g ref="#rlong"/> þa ea</l>
+          <l n="20"><lb facs="#WoE_line_100v_20" xml:id="WoE_lb_100v_20" n="20"/>fa<g ref="#rlong"/>eð<g ref="fullstop"/> <g ref="#caph"/><g ref="#ydot"/> beoð <g ref="#slong"/><g ref="#wynn"/>a h<g ref="#rlong"/>ædlice ofe<g ref="#rlong"/> þæ<g ref="#rlong"/>e ea</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.6.jpg" n="Folio 101r" xml:id="WoE_06"/>
+          <l n="1"><lb facs="#WoE_line_101r_01" xml:id="WoE_lb_101r_01" n="1"/><choice><orig>t</orig><corr>[þæ]t</corr></choice> men <g ref="#wynn"/>enað þæ<g ref="#tins"/> h<g ref="#ydot"/> fleo<g ref="#gins"/>an<g ref="fullstop"/> <g ref="middot"/></l>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <l n="2"><lb facs="#WoE_line_101r_02" xml:id="WoE_lb_101r_02" n="2"/><choice><orig>e<g ref="#tins"/><g ref="#wynn"/>ih</orig><corr>[B]etwih</corr></choice> þy<g ref="#slong"/><g ref="#slong"/>on <g ref="#tins"/><g ref="#wynn"/>am ean i<g ref="#slong"/> <choice><orig>lond buni<g ref="#slong"/></orig><reg>londbunis</reg></choice><g ref="middot"/> <choice><orig>loco</orig><reg>Loco-</reg></choice></l>
+          <l n="3"><lb facs="#WoE_line_101r_03" xml:id="WoE_lb_101r_03" n="3"/><g ref="#tins"/>heo ha<g ref="#tins"/><g ref="#tins"/>e<g ref="comma"/> <g ref="#that"/> i<g ref="#slong"/> <choice><orig>be <g ref="#tins"/><g ref="#wynn"/>ih</orig><reg>betwih</reg></choice> <g ref="#capn"/>ile <g ref="#ond"/> <g ref="#capb"/><g ref="#rlong"/><g ref="#ydot"/>xon<g ref="#tins"/>e</l>
+          <l n="4"><lb facs="#WoE_line_101r_04" xml:id="WoE_lb_101r_04" n="4"/><g ref="#gins"/>e<g ref="#slong"/>e<g ref="#tins"/>ed<g ref="fullstop"/> <choice><orig><g ref="#slong"/>eo</orig><reg>Seo</reg></choice> <g ref="#capn"/>il i<g ref="#slong"/> ealdo<g ref="#rlong"/> fallic<g ref="#rlong"/>a ea<g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> heo</l>
+          <l n="5"><lb facs="#WoE_line_101r_05" xml:id="WoE_lb_101r_05" n="5"/>flo<g ref="#wynn"/>eð of <g ref="#cape"/><g ref="#gins"/><g ref="#ydot"/>p<g ref="#tins"/>a lande<g ref="fullstop"/> <g ref="middot"/> <choice><orig><g ref="#ond"/></orig><reg>Ond</reg></choice> hi nemnað þa</l>
+          <l n="6"><lb facs="#WoE_line_101r_06" xml:id="WoE_lb_101r_06" n="6"/>ea <g ref="#capa"/><g ref="#rlong"/>chobole<g ref="#tins"/>a<g ref="comma"/> <g ref="#that"/> i<g ref="#slong"/> ha<g ref="#tins"/>en <g ref="#that"/> micle <g ref="#wynn"/>æ<g ref="#tins"/>e<g ref="#rlong"/><g ref="fullstop"/></l> 
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.7.jpg" n="Folio 101v" xml:id="WoE_07"/>
+          <l n="1"><lb facs="#WoE_line_101v_01" xml:id="WoE_lb_101v_01" n="1"/>On þ<g ref="#ydot"/><g ref="#slong"/><g ref="#slong"/>um beoð acende <choice><orig>þamiclan</orig><reg>þa miclan</reg></choice> mæne<g ref="#gins"/>o</l>
+          <l n="2"><lb facs="#WoE_line_101v_02" xml:id="WoE_lb_101v_02" n="2"/><choice><orig>olfen da</orig><reg>olfenda</reg></choice><g ref="fullstop"/></l>
+          <l n="3"><lb facs="#WoE_line_101v_03" xml:id="WoE_lb_101v_03" n="3"/>Ðæ<g ref="#rlong"/> beoð cende men<g ref="comma"/></l>
+          <l n="4"><lb facs="#WoE_line_101v_04" xml:id="WoE_lb_101v_04" n="4"/>h<g ref="#ydot"/> beoð fif<g ref="#tins"/>yne</l>
+          <l n="5"><lb facs="#WoE_line_101v_05" xml:id="WoE_lb_101v_05" n="5"/>fo<g ref="#tins"/>a lan<g ref="#gins"/>e <g ref="middot"/><g ref="#ond"/> h<g ref="#ydot"/> <choice><orig>hab</orig><reg>hab-</reg></choice></l>
+          <l n="6"><lb facs="#WoE_line_101v_06" xml:id="WoE_lb_101v_06" n="6"/>bað h<g ref="#wynn"/>i<g ref="#tins"/> lic <g ref="#ond"/> <g ref="#tins"/><g ref="#wynn"/>a</l>
+          <l n="7"><lb facs="#WoE_line_101v_07" xml:id="WoE_lb_101v_07" n="7"/>neb on anum heafde<g ref="comma"/></l>
+          <l n="8"><lb facs="#WoE_line_101v_08" xml:id="WoE_lb_101v_08" n="8"/><choice><orig><g ref="#tins"/></orig><corr>[fe]t</corr></choice> <g ref="#ond"/> cneo<g ref="#wynn"/>u <g ref="#slong"/><g ref="#wynn"/><g ref="#ydot"/>ðe</l>
+          <l n="9"><lb facs="#WoE_line_101v_09" xml:id="WoE_lb_101v_09" n="9"/><g ref="#rlong"/>eade<g ref="comma"/> <g ref="#ond"/> lan<g ref="#gins"/>e no<g ref="#slong"/>a <g ref="#ond"/> <g ref="#slong"/><g ref="#wynn"/>ea<g ref="#rlong"/><g ref="#tins"/> feax<g ref="fullstop"/><g ref="middot"/> Þonne h<g ref="#ydot"/></l>
+          <l n="10"><lb facs="#WoE_line_101v_10" xml:id="WoE_lb_101v_10" n="10"/>cennan <g ref="#wynn"/>illað<g ref="comma"/> þonne fa<g ref="#rlong"/>að h<g ref="#ydot"/> <choice><orig>on<g ref="#slong"/>cipum</orig><reg>on scipum</reg></choice> <g ref="#tins"/>o</l>
+          <l n="11"><lb facs="#WoE_line_101v_11" xml:id="WoE_lb_101v_11" n="11"/><choice><orig>in deum</orig><reg>Indeum</reg></choice><g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> þæ<g ref="#rlong"/> h<g ref="#ydot"/><g ref="#rlong"/>a <g ref="#gins"/>ec<g ref="#ydot"/>nda <choice><orig>in<g ref="#wynn"/>o<g ref="#rlong"/>ld</orig><reg>in world</reg></choice> b<g ref="#rlong"/>in<g ref="#gins"/>aþ<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#WoE_line_101v_12" xml:id="WoE_lb_101v_12" n="12"/>Ciconia <choice><orig>in<g ref="#gins"/>allia</orig><reg>in Gallia</reg></choice> ha<g ref="#tins"/><g ref="#tins"/>e</l>
+          <l n="13"><lb facs="#WoE_line_101v_13" xml:id="WoE_lb_101v_13" n="13"/><g ref="#that"/> land þæ<g ref="#rlong"/> beoð men <choice><orig>a</orig><reg>a-</reg></choice></l>
+          <l n="14"><lb facs="#WoE_line_101v_14" xml:id="WoE_lb_101v_14" n="14"/>cende on<g ref="middot"/> d<g ref="#rlong"/>y<g ref="#slong"/> heo<g ref="#wynn"/>e<g ref="#slong"/><g ref="comma"/></l>
+          <l n="15"><lb facs="#WoE_line_101v_15" xml:id="WoE_lb_101v_15" n="15"/>þa<g ref="#rlong"/>a heafdu beoð <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+          <l n="16"><lb facs="#WoE_line_101v_16" xml:id="WoE_lb_101v_16" n="16"/>monu <g ref="#slong"/><g ref="#wynn"/>a leona <choice><orig>heaf</orig><reg>heaf-</reg></choice></l>
+          <l n="17"><lb facs="#WoE_line_101v_17" xml:id="WoE_lb_101v_17" n="17"/>du<g ref="comma"/> <g ref="#ond"/> hi beoð ·xx· fo<g ref="#tins"/>a</l>
+          <l n="18"><lb facs="#WoE_line_101v_18" xml:id="WoE_lb_101v_18" n="18"/>lan<g ref="#gins"/>e <g ref="#ond"/> h<g ref="#ydot"/> habbað</l>
+          <l n="19"><lb facs="#WoE_line_101v_19" xml:id="WoE_lb_101v_19" n="19"/>micelne muð <g ref="#slong"/><g ref="#wynn"/>æfon<g ref="fullstop"/><g ref="middot"/> <choice><orig><g ref="#gins"/>yf</orig><reg>Gyf</reg></choice> h<g ref="#wynn"/>ylcne <choice><orig>mon</orig><reg>mon-</reg></choice></l>
+          <l n="20"><lb facs="#WoE_line_101v_20" xml:id="WoE_lb_101v_20" n="20"/>nan <choice><orig>onþæm</orig><reg>on þæm</reg></choice> <choice><orig>landū</orig><reg>landum</reg></choice> on<g ref="#gins"/>i<g ref="#tins"/>að oððe <g ref="#gins"/>e<g ref="#slong"/>eoþ</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.8.jpg" n="Folio 102r" xml:id="WoE_08"/>
+          <l n="1"><lb facs="#WoE_line_102r_01" xml:id="WoE_lb_102r_01" n="1"/>oððe him h<g ref="#wynn"/>ilc man fol<g ref="#gins"/>iende bið<g ref="comma"/><g ref="middot"/> þonne feo<g ref="#rlong"/></l>
+          <l n="2"><lb facs="#WoE_line_102r_02" xml:id="WoE_lb_102r_02" n="2"/><g ref="#that"/> <choice><orig>hifleoð</orig><reg>hi fleoð</reg></choice><g ref="comma"/> <g ref="#ond"/> blode h<g ref="#ydot"/> <g ref="#slong"/><g ref="#wynn"/>æ<g ref="#tins"/>að<g ref="fullstop"/><g ref="middot"/> <g ref="#capthorn"/>a<g ref="#slong"/> beoð men <g ref="#gins"/>e<g ref="#wynn"/>ende<g ref="fullstop"/></l>
+          <l n="3"><lb facs="#WoE_line_102r_03" xml:id="WoE_lb_102r_03" n="3"/>Be<g ref="#gins"/>eondan <g ref="#capb"/><g ref="#rlong"/>ixon<g ref="#tins"/>e</l>
+          <l n="4"><lb facs="#WoE_line_102r_04" xml:id="WoE_lb_102r_04" n="4"/>þæ<g ref="#rlong"/>e ea<g ref="comma"/> ea<g ref="#slong"/><g ref="#tins"/> þonon<g ref="comma"/></l>
+          <l n="5"><lb facs="#WoE_line_102r_05" xml:id="WoE_lb_102r_05" n="5"/>beoð men acende lan<g ref="#gins"/>e</l>
+          <l n="6"><lb facs="#WoE_line_102r_06" xml:id="WoE_lb_102r_06" n="6"/><g ref="#ond"/> micle<g ref="comma"/> <choice><orig>þahabbað</orig><reg>þa habbað</reg></choice> fe<g ref="#tins"/></l>
+          <l n="7"><lb facs="#WoE_line_102r_07" xml:id="WoE_lb_102r_07" n="7"/><g ref="#ond"/> <g ref="#slong"/>concan<g ref="middotspace"/>xii· fo<g ref="#tins"/>a lan<g ref="#gins"/>e<g ref="comma"/></l>
+          <l n="8"><lb facs="#WoE_line_102r_08" xml:id="WoE_lb_102r_08" n="8"/><g ref="#slong"/>idan mid <choice><orig>b<g ref="#rlong"/>eo<g ref="#slong"/><g ref="#tins"/>ū</orig><reg>breostum</reg></choice> <g ref="#slong"/>eofon</l>
+          <l n="9"><lb facs="#WoE_line_102r_09" xml:id="WoE_lb_102r_09" n="9"/>fo<g ref="#tins"/>a lan<g ref="#gins"/>e<g ref="fullstop"/> <g ref="middot"/> <g ref="#caph"/>o<g ref="#slong"/><g ref="#tins"/>e<g ref="#slong"/> h<g ref="#ydot"/></l>
+          <l n="10"><lb facs="#WoE_line_102r_10" xml:id="WoE_lb_102r_10" n="10"/><g ref="#slong"/>ynd nemned<g ref="fullstop"/> <g ref="#capc"/>uþlice</l>
+          <l n="11"><lb facs="#WoE_line_102r_11" xml:id="WoE_lb_102r_11" n="11"/><g ref="#slong"/><g ref="#wynn"/>a h<g ref="#wynn"/>ylcne man <g ref="#slong"/><g ref="#wynn"/>a h<g ref="#ydot"/></l>
+          <l n="12"><lb facs="#WoE_line_102r_12" xml:id="WoE_lb_102r_12" n="12"/><g ref="#gins"/>elæccað<g ref="comma"/> þonne f<g ref="#rlong"/>e<g ref="#tins"/>að hi h<g ref="#ydot"/>ne<g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="13"><lb facs="#WoE_line_102r_13" xml:id="WoE_lb_102r_13" n="13"/>Ðonne seondon</l>
+          <l n="14"><lb facs="#WoE_line_102r_14" xml:id="WoE_lb_102r_14" n="14"/><g ref="#wynn"/>ildeo<g ref="#rlong"/> þa ha<g ref="#tins"/><g ref="#tins"/>on</l>
+          <l n="15"><lb facs="#WoE_line_102r_15" xml:id="WoE_lb_102r_15" n="15"/><g ref="#capl"/>e<g ref="#rlong"/><g ref="#tins"/>ice<g ref="#slong"/><g ref="fullstop"/> <g ref="#caph"/>y <choice><orig>hab</orig><reg>hab-</reg></choice></l>
+          <l n="16"><lb facs="#WoE_line_102r_16" xml:id="WoE_lb_102r_16" n="16"/>bað eo<g ref="#slong"/>ele<g ref="#slong"/> <choice><orig>ea</orig><reg>ea-</reg></choice></l>
+          <l n="17"><lb facs="#WoE_line_102r_17" xml:id="WoE_lb_102r_17" n="17"/><g ref="#rlong"/>an <g ref="#ond"/> <g ref="#slong"/>ceape<g ref="#slong"/></l>
+          <l n="18"><lb facs="#WoE_line_102r_18" xml:id="WoE_lb_102r_18" n="18"/><g ref="#wynn"/>ulle <g ref="#ond"/> fu<g ref="#gins"/>ele<g ref="#slong"/></l>
+          <l n="19"><lb facs="#WoE_line_102r_19" xml:id="WoE_lb_102r_19" n="19"/>fe<g ref="#tins"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="20"><lb facs="#WoE_line_102r_20" xml:id="WoE_lb_102r_20" n="20"/>Þonne <g ref="#slong"/><g ref="#ydot"/>ndon oþe<g ref="#rlong"/>e ealond <g ref="#slong"/>uð f<g ref="#rlong"/>om <choice><orig>bixon</orig><corr>B[r]ixont[te]</corr></choice></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.9.jpg" n="Folio 102v" xml:id="WoE_09"/>
+          <l n="1"><lb facs="#WoE_line_102v_01" xml:id="WoE_lb_102v_01" n="1"/><choice><orig></orig><corr>[on]</corr></choice> þon beoð bu<g ref="#tins"/>on</l>
+          <l n="2"><lb facs="#WoE_line_102v_02" xml:id="WoE_lb_102v_02" n="2"/><choice><orig>heafdū</orig><reg>heafdum</reg></choice><g ref="comma"/> þa habbað</l>
+          <l n="3"><lb facs="#WoE_line_102v_03" xml:id="WoE_lb_102v_03" n="3"/>on hy<g ref="#rlong"/>a b<g ref="#rlong"/>eo<g ref="#slong"/><g ref="#tins"/>um</l>
+          <l n="4"><lb facs="#WoE_line_102v_04" xml:id="WoE_lb_102v_04" n="4"/><choice><orig>eo<g ref="#rlong"/>a</orig><corr>[h]eora</corr></choice> ea<g ref="#gins"/>an <g ref="#ond"/> muð<g ref="fullstop"/></l>
+          <l n="5"><lb facs="#WoE_line_102v_05" xml:id="WoE_lb_102v_05" n="5"/><g ref="#caph"/>y <g ref="#slong"/>eondon eah<g ref="#tins"/>a</l>
+          <l n="6"><lb facs="#WoE_line_102v_06" xml:id="WoE_lb_102v_06" n="6"/>fo<g ref="#tins"/>a lan<g ref="#gins"/>e <g ref="#ond"/> eah<g ref="#tins"/>a</l>
+          <l n="7"><lb facs="#WoE_line_102v_07" xml:id="WoE_lb_102v_07" n="7"/>fo<g ref="#tins"/>a b<g ref="#rlong"/>ade<g ref="fullstop"/> <g ref="middot"/></l>
+          <lb/>
+          <lb/>
+          <lb/>
+          <l n="8"><lb facs="#WoE_line_102v_08" xml:id="WoE_lb_102v_08" n="8"/><choice><orig>a<g ref="#rlong"/></orig><corr>[Ð]ar</corr></choice> beoð cende<g ref="comma"/> <choice><orig>þabeoð</orig><reg>þa beoð</reg></choice> <choice><orig>onlen<g ref="#gins"/>e</orig><reg>on lenge</reg></choice> hund<g ref="#tins"/>eo<g ref="#tins"/>i<g ref="#gins"/>e</l>
+          <l n="9"><lb facs="#WoE_line_102v_09" xml:id="WoE_lb_102v_09" n="9"/><choice><orig>mæla/</orig><corr>[fot]mæla</corr></choice> lan<g ref="#gins"/>e<g ref="middot"/> <g ref="#ond"/> fif<g ref="#tins"/>i<g ref="#gins"/>e<g ref="#slong"/><g ref="comma"/> h<g ref="#ydot"/> beoð <g ref="#gins"/><g ref="#rlong"/>ea<g ref="#tins"/>e</l>
+          <l n="10"><lb facs="#WoE_line_102v_10" xml:id="WoE_lb_102v_10" n="10"/><g ref="#slong"/><g ref="#wynn"/>a <g ref="#slong"/><g ref="#tins"/>ænene <g ref="#slong"/><g ref="#wynn"/>e<g ref="#rlong"/>a<g ref="#slong"/> micle<g ref="fullstop"/><g ref="middot"/> <g ref="#capf"/>o<g ref="#rlong"/> þa<g ref="#rlong"/>a <choice><orig>d<g ref="#rlong"/>a</orig><reg>dra-</reg></choice></l>
+          <l n="11"><lb facs="#WoE_line_102v_11" xml:id="WoE_lb_102v_11" n="11"/>cena micelne<g ref="#slong"/>se ne <choice><orig>m e<g ref="#gins"/></orig><corr>m[æ]g</corr></choice> nan man</l>
+          <l n="12"><lb facs="#WoE_line_102v_12" xml:id="WoE_lb_102v_12" n="12"/>na<g ref="#ydot"/>þelice on <g ref="#that"/> land <g ref="#gins"/>efa<g ref="#rlong"/>an<g ref="fullstop"/></l>
+          <l n="13"><lb facs="#WoE_line_102v_13" xml:id="WoE_lb_102v_13" n="13"/><choice><orig><g ref="#rlong"/>om</orig><corr>[F]rom</corr></choice> þi<g ref="#slong"/>se <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e i<g ref="#slong"/></l>
+          <l n="14"><lb facs="#WoE_line_102v_14" xml:id="WoE_lb_102v_14" n="14"/>oðe<g ref="#rlong"/> <g ref="#rlong"/>ice on þa <g ref="#slong"/>uð</l>
+          <l n="15"><lb facs="#WoE_line_102v_15" xml:id="WoE_lb_102v_15" n="15"/>healfe <choice><orig><g ref="#gins"/>a<g ref="#rlong"/> <g ref="#slong"/>e<g ref="#gins"/>c<g ref="#gins"/>e<g ref="#slong"/></orig><reg>garsecges</reg></choice><g ref="comma"/></l>
+          <l n="16"><lb facs="#WoE_line_102v_16" xml:id="WoE_lb_102v_16" n="16"/><g ref="#that"/> i<g ref="#slong"/> <choice><orig><g ref="#gins"/>e <g ref="#tins"/>eald</orig><reg>geteald</reg></choice> þæ<g ref="#slong"/></l>
+          <l n="17"><lb facs="#WoE_line_102v_17" xml:id="WoE_lb_102v_17" n="17"/><choice><orig><g ref="#slong"/>san</orig><corr>[læ]ssan</corr></choice> <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice></l>
+          </div>
+           <div>
+          <pb facs="data/images/single/Fol.10.jpg" n="Folio 103r" xml:id="WoE_10"/>
+          <l n="1"><lb facs="#WoE_line_103r_01" xml:id="WoE_lb_103r_01" n="1"/>þe <g ref="#slong"/><g ref="#tins"/>adia ha<g ref="#tins"/><g ref="#tins"/>e ·ccc<g ref="#middotspacerx"/><g ref="#ond"/> <g ref="#addmiddot"/>xxxiii·<g ref="comma"/> <g ref="#ond"/> þæ<g ref="#slong"/> <choice><orig>m</orig><corr>m[iclan]</corr></choice></l>
+          <l n="2"><lb facs="#WoE_line_103r_02" xml:id="WoE_lb_103r_02" n="2"/>þe leone<g ref="#slong"/> ha<g ref="#tins"/><g ref="#tins"/>e ·cc<g ref="#middot"/>liii· <g ref="#ond"/> an mil<g ref="fullstop"/> <g ref="middot"/> <g ref="#capthorn"/>æ<g ref="#rlong"/> beoð</l>
+          <l n="3"><lb facs="#WoE_line_103r_03" xml:id="WoE_lb_103r_03" n="3"/>cende <choice><orig>homo dubii</orig><reg>Homodubii</reg></choice> <g ref="#that"/> beoð <note>T] twylice</note><g ref="fullstop"/><g ref="middot"/> <g ref="#caph"/><g ref="#ydot"/> habbaþ <choice><orig>oððone</orig><reg>oð ðone</reg></choice></l>
+          <l n="4"><lb facs="#WoE_line_103r_04" xml:id="WoE_lb_103r_04" n="4"/>nafolan on <choice><orig>men ni<g ref="#slong"/>cū</orig><reg>menniscum</reg></choice> <g ref="#gins"/>e<g ref="#slong"/>ceape<g ref="middot"/> <g ref="#ond"/> <g ref="#slong"/>yþþan on</l>
+          <l n="5"><lb facs="#WoE_line_103r_05" xml:id="WoE_lb_103r_05" n="5"/>eo<g ref="#slong"/>ele<g ref="#slong"/> <choice><orig><g ref="#gins"/>elicne<g ref="#slong"/> se</orig><reg>gelicnesse</reg></choice><g ref="semicolon"/> <g ref="#ond"/> h<g ref="#ydot"/> habbað lon<g ref="#gins"/>e <g ref="#slong"/>concan</l>
+          <l n="6"><lb facs="#WoE_line_103r_06" xml:id="WoE_lb_103r_06" n="6"/><g ref="#slong"/><g ref="#wynn"/>a fu<g ref="#gins"/>ela<g ref="#slong"/> <g ref="#ond"/> liþelice <g ref="#slong"/><g ref="#tins"/>efne<g ref="fullstop"/><g ref="middot"/> Gif h<g ref="#ydot"/> h<g ref="#wynn"/>ilcne</l>
+          <l n="7"><lb facs="#WoE_line_103r_07" xml:id="WoE_lb_103r_07" n="7"/>man on þæm <choice><orig>landū</orig><reg>landum</reg></choice> on<g ref="#gins"/><g ref="#ydot"/><g ref="#tins"/>að oððe <choice><orig><g ref="#gins"/>e <g ref="#slong"/>eoð</orig><reg>geseoð</reg></choice></l>
+          <l n="8"><lb facs="#WoE_line_103r_08" xml:id="WoE_lb_103r_08" n="8"/>þonne fleoð h<g ref="#ydot"/> feo<g ref="#rlong"/><g ref="fullstop"/> <g ref="middot"/></l>
+          <l n="9"><lb facs="#WoE_line_103r_09" xml:id="WoE_lb_103r_09" n="9"/>Ðonne i<g ref="#slong"/> oþe<g ref="#rlong"/> <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/></l>
+          <l n="10"><lb facs="#WoE_line_103r_10" xml:id="WoE_lb_103r_10" n="10"/><choice><orig>el<g ref="#rlong"/>eo<g ref="#rlong"/>d <g ref="#gins"/>e</orig><reg>elreordge</reg></choice> <choice><orig>m̄</orig><reg>men</reg></choice> beoð</l>
+          <l n="11"><lb facs="#WoE_line_103r_11" xml:id="WoE_lb_103r_11" n="11"/>on<g ref="middotcomma"/><g ref="#ond"/> þa habbað <choice><orig>c<g ref="#ydot"/>ni</orig><reg>cyni-</reg></choice></l>
+          <l n="12"><lb facs="#WoE_line_103r_12" xml:id="WoE_lb_103r_12" n="12"/><g ref="#gins"/>a<g ref="#slong"/> unde<g ref="#rlong"/> þa<g ref="#rlong"/>a i<g ref="#slong"/></l>
+          <l n="13"><lb facs="#WoE_line_103r_13" xml:id="WoE_lb_103r_13" n="13"/><choice><orig><g ref="#gins"/>e <g ref="#tins"/>eald</orig><reg>geteald</reg></choice> ·c·<g ref="fullstop"/> <choice><orig><g ref="#that"/></orig><reg>Þæt</reg></choice> <choice><orig><g ref="#slong"/><g ref="#ydot"/>n</orig><reg>syn-</reg></choice></l>
+          <l n="14"><lb facs="#WoE_line_103r_14" xml:id="WoE_lb_103r_14" n="14"/>don <choice><orig>þa<g ref="#wynn"/><g ref="#ydot"/><g ref="#rlong"/><g ref="#slong"/><g ref="#tins"/>an</orig><reg>þa wyrstan</reg></choice> men <g ref="#ond"/> þa <choice><orig>el <g ref="#rlong"/>eo<g ref="#rlong"/>de <g ref="#gins"/>e<g ref="#slong"/><g ref="#tins"/>an</orig><reg>elreordegestan</reg></choice><g ref="fullstop"/> <choice><orig><g ref="#ond"/></orig><reg>And</reg></choice> þa<g ref="#rlong"/></l>
+          <l n="15"><lb facs="#WoE_line_103r_15" xml:id="WoE_lb_103r_15" n="15"/><g ref="#slong"/><g ref="#ydot"/>ndon <g ref="#tins"/><g ref="#wynn"/>e<g ref="#gins"/>en <g ref="#slong"/>eaþa<g ref="#slong"/><g ref="middotcomma"/> oþe<g ref="#rlong"/> i<g ref="#slong"/> <choice><orig>sun nan</orig><reg>sunnan</reg></choice> oþe<g ref="#rlong"/></l>
+          <l n="16"><lb facs="#WoE_line_103r_16" xml:id="WoE_lb_103r_16" n="16"/>monan<g ref="fullstop"/> <choice><orig><g ref="#slong"/>e<g ref="#slong"/>unnan</orig><reg>Se sunnan</reg></choice> <g ref="#slong"/>eað <g ref="#slong"/>e bið dæ<g ref="#gins"/>e<g ref="#slong"/> ha<g ref="#tins"/> <g ref="#ond"/> <choice><orig>nih</orig><reg>nih-</reg></choice></l>
+          <l n="17"><lb facs="#WoE_line_103r_17" xml:id="WoE_lb_103r_17" n="17"/><g ref="#tins"/>e<g ref="#slong"/> ceald<g ref="comma"/> <g ref="middot"/><g ref="#ond"/> <g ref="#slong"/>e monan <g ref="#slong"/>eað <g ref="#slong"/>e bið nih<g ref="#tins"/>e<g ref="#slong"/> ha<g ref="#tins"/></l>
+          <l n="18"><lb facs="#WoE_line_103r_18" xml:id="WoE_lb_103r_18" n="18"/><g ref="#ond"/> dæ<g ref="#gins"/>e<g ref="#slong"/> ceald<g ref="fullstop"/><g ref="middot"/> <g ref="#caph"/>eo<g ref="#rlong"/>a <g ref="#wynn"/>idne<g ref="#slong"/> i<g ref="#slong"/> ·cc· þæ<g ref="#slong"/> læ<g ref="#slong"/><g ref="#slong"/>an</l>
+          <l n="19"><lb facs="#WoE_line_103r_19" xml:id="WoE_lb_103r_19" n="19"/><choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice> <g ref="#slong"/><g ref="#tins"/>adia <g ref="middot"/><g ref="#ond"/> þæ<g ref="#slong"/> ma<g ref="#rlong"/>an þe leone<g ref="#slong"/></l>
+          <l n="20"><lb facs="#WoE_line_103r_20" xml:id="WoE_lb_103r_20" n="20"/>ha<g ref="#tins"/><g ref="#tins"/>e ·cxxx<g ref="#middot"/>iii· <g ref="#ond"/> an healf mil<g ref="fullstop"/></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.11.jpg" n="Folio 103v" xml:id="WoE_11"/>
+          <l n="1"><lb facs="#WoE_line_103v_01" xml:id="WoE_lb_103v_01" n="1"/>On þi<g ref="#slong"/>se <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e beoð <choice><orig><g ref="#tins"/><g ref="#rlong"/>eo<g ref="#wynn"/></orig><reg>treow-</reg></choice></l>
+          <l n="2"><lb facs="#WoE_line_103v_02" xml:id="WoE_lb_103v_02" n="2"/>c<g ref="#ydot"/>n <choice><orig>þabeoð</orig><reg>þa beoð</reg></choice> la<g ref="#wynn"/>e<g ref="#rlong"/>n beabe</l>
+          <l n="3"><lb facs="#WoE_line_103v_03" xml:id="WoE_lb_103v_03" n="3"/><g ref="#ond"/> <choice><orig>ele <g ref="#tins"/><g ref="#rlong"/>eo<g ref="#wynn"/>um</orig><reg>eletreowum</reg></choice> onlice<g ref="fullstop"/> <g ref="#capo"/>f</l>
+          <l n="4"><lb facs="#WoE_line_103v_04" xml:id="WoE_lb_103v_04" n="4"/>þæm <choice><orig><g ref="#tins"/><g ref="#rlong"/>eo<g ref="#wynn"/>ū</orig><reg>treowum</reg></choice> balzamum</l>
+          <l n="5"><lb facs="#WoE_line_103v_05" xml:id="WoE_lb_103v_05" n="5"/>se <choice><orig>deo<g ref="#rlong"/> <g ref="#wynn"/>eo<g ref="#rlong"/>ðe<g ref="#slong"/><g ref="#tins"/>a</orig><reg>deorweorðesta</reg></choice> ele</l>
+          <l n="6"><lb facs="#WoE_line_103v_06" xml:id="WoE_lb_103v_06" n="6"/>bið acenned<g ref="fullstop"/><g ref="middot"/> <choice><orig><g ref="#slong"/>eo</orig><reg>Seo</reg></choice> <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/> i<g ref="#slong"/></l>
+          <l n="7"><lb facs="#WoE_line_103v_07" xml:id="WoE_lb_103v_07" n="7"/>þæ<g ref="#slong"/> læ<g ref="#slong"/>san <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice> <choice><orig>þe<g ref="#slong"/><g ref="#tins"/>adia</orig><reg>þe stadia</reg></choice> ha<g ref="#tins"/><g ref="#tins"/>e</l>
+          <l n="8"><lb facs="#WoE_line_103v_08" xml:id="WoE_lb_103v_08" n="8"/>·c<g ref="#middot"/>li· <g ref="#ond"/> þæ<g ref="#slong"/> miclan þe <choice><orig>leō</orig><reg>leon</reg></choice> ·lii·<g ref="fullstop"/></l>
+          <l n="9"><lb facs="#WoE_line_103v_09" xml:id="WoE_lb_103v_09" n="9"/><choice><orig>Ðo</orig><corr>Ðo[nne]</corr></choice> <choice><orig></orig><corr>is sum</corr></choice> ealond</l>
+          <l n="10"><lb facs="#WoE_line_103v_10" xml:id="WoE_lb_103v_10" n="10"/>in þæ<g ref="#rlong"/>e <choice><orig><g ref="#rlong"/>eadan</orig><reg>Readan</reg></choice> <g ref="#caps"/>æ<g ref="comma"/></l>
+          <l n="11"><lb facs="#WoE_line_103v_11" xml:id="WoE_lb_103v_11" n="11"/>þæ<g ref="#rlong"/> i<g ref="#slong"/> manc<g ref="#ydot"/>n þæ<g ref="#tins"/></l>
+          <l n="12"><lb facs="#WoE_line_103v_12" xml:id="WoE_lb_103v_12" n="12"/>i<g ref="#slong"/> <choice><orig>midu<g ref="#slong"/></orig><reg>mid us</reg></choice> <g ref="#capd"/>one<g ref="#slong"/><g ref="#tins"/><g ref="#rlong"/>e</l>
+          <l n="13"><lb facs="#WoE_line_103v_13" xml:id="WoE_lb_103v_13" n="13"/><choice><orig>emned</orig><corr>[n]emned</corr></choice><g ref="middotcomma"/> þa <g ref="#slong"/><g ref="#ydot"/>ndon</l>
+          <l n="14"><lb facs="#WoE_line_103v_14" xml:id="WoE_lb_103v_14" n="14"/><choice><orig><g ref="#gins"/>e xene</orig><corr>ge[awe]xene</corr></choice> <g ref="#slong"/><g ref="#wynn"/>a <choice><orig>f<g ref="#rlong"/> f</orig><corr>fr[i]f-</corr></choice></l>
+          <l n="15"><lb facs="#WoE_line_103v_15" xml:id="WoE_lb_103v_15" n="15"/><choice><orig><g ref="#tins"/>e<g ref="#rlong"/></orig><corr>ter[as]</corr></choice> <g ref="middot"/>f<g ref="#rlong"/>am þam</l>
+          <l n="16"><lb facs="#WoE_line_103v_16" xml:id="WoE_lb_103v_16" n="16"/>heafde <choice><orig>oððone</orig><reg>oð ðone</reg></choice> nafolan<g ref="comma"/> <g ref="#ond"/> <g ref="#slong"/>e oðe<g ref="#rlong"/> dæl bið</l>
+          <l n="17"><lb facs="#WoE_line_103v_17" xml:id="WoE_lb_103v_17" n="17"/>menni<g ref="#slong"/>ce onlic<g ref="fullstop"/> <g ref="middot"/> <choice><orig><g ref="#ond"/></orig><reg>Ond</reg></choice> hy <choice><orig>cun non</orig><reg>cunnon</reg></choice> menni<g ref="#slong"/>ce <choice><orig><g ref="#gins"/>e</orig><reg>ge-</reg></choice></l>
+          <l n="18"><lb facs="#WoE_line_103v_18" xml:id="WoE_lb_103v_18" n="18"/><g ref="#rlong"/>eo<g ref="#rlong"/>d<g ref="fullstop"/> <g ref="#capthorn"/>onne h<g ref="#ydot"/> <choice><orig>f<g ref="#rlong"/>em de<g ref="#slong"/></orig><reg>fremdes</reg></choice> c<g ref="#ydot"/>nne<g ref="#slong"/> mannan</l>
+          <l n="19"><lb facs="#WoE_line_103v_19" xml:id="WoE_lb_103v_19" n="19"/><choice><orig>seoð</orig><corr>[ge]seoð</corr></choice><g ref="comma"/> þonne nemnað h<g ref="#ydot"/> h<g ref="#ydot"/>ne <g ref="middot"/><g ref="#ond"/> hi<g ref="#slong"/> ma<g ref="#gins"/>a<g ref="#slong"/></l>
+          <l n="20"><lb facs="#WoE_line_103v_20" xml:id="WoE_lb_103v_20" n="20"/><choice><orig>uþ<g ref="#rlong"/>a</orig><corr>[c]uþra</corr></choice> <choice><orig>man na</orig><reg>manna</reg></choice> naman<g ref="comma"/> <g ref="#ond"/> mid <choice><orig>lea<g ref="#slong"/> licum</orig><reg>leaslicum</reg></choice></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.12.jpg" n="Folio 104r" xml:id="WoE_12"/>
+          <l n="1"><lb facs="#WoE_line_104r_01" xml:id="WoE_lb_104r_01" n="1"/><g ref="#wynn"/>o<g ref="#rlong"/>dum h<g ref="#ydot"/> hine be<g ref="#slong"/><g ref="#wynn"/>icað<g ref="comma"/> <g ref="#ond"/> hine <g ref="#gins"/>efoð<g ref="comma"/> <g ref="#ond"/> <choice><orig>æft</orig><corr>æft[er]</corr></choice></l>
+          <l n="2"><lb facs="#WoE_line_104r_02" xml:id="WoE_lb_104r_02" n="2"/>þan h<g ref="#ydot"/> hine f<g ref="#rlong"/>e<g ref="#tins"/>að ealne bu<g ref="#tins"/>on þon <choice><orig>afd</orig><corr>[he]afd[e]</corr></choice></l>
+          <l n="3"><lb facs="#WoE_line_104r_03" xml:id="WoE_lb_104r_03" n="3"/><g ref="#ond"/> þonne <g ref="#slong"/>i<g ref="#tins"/><g ref="#tins"/>að <g ref="#ond"/> <g ref="#wynn"/>epað ofe<g ref="#rlong"/> þam heafde<g ref="fullstop"/></l>
+          <l n="4"><lb facs="#WoE_line_104r_04" xml:id="WoE_lb_104r_04" n="4"/>Ðonne i<g ref="#slong"/> ea<g ref="#slong"/><g ref="#tins"/> þæ<g ref="#rlong"/> beoð men acende þa beoð</l>
+          <l n="5"><lb facs="#WoE_line_104r_05" xml:id="WoE_lb_104r_05" n="5"/>on <g ref="#wynn"/>æ<g ref="#slong"/><g ref="#tins"/>me fif<g ref="#tins"/><g ref="#ydot"/>ne fo<g ref="#tins"/>a lan<g ref="#gins"/>e <g ref="#ond"/><g ref="middotspace"/>x· b<g ref="#rlong"/>ade<g ref="fullstop"/></l>
+          <l n="6"><lb facs="#WoE_line_104r_06" xml:id="WoE_lb_104r_06" n="6"/><g ref="#caph"/><g ref="#ydot"/> habbað micel heafod <g ref="#ond"/> ea<g ref="#rlong"/>an <g ref="#slong"/><g ref="#wynn"/>æfon<g ref="fullstop"/> <g ref="#capo"/>þe<g ref="#rlong"/></l>
+          <l n="7"><lb facs="#WoE_line_104r_07" xml:id="WoE_lb_104r_07" n="7"/>ea<g ref="#rlong"/>e h<g ref="#ydot"/> him on nih<g ref="#tins"/></l>
+          <l n="8"><lb facs="#WoE_line_104r_08" xml:id="WoE_lb_104r_08" n="8"/><choice><orig>unde<g ref="#rlong"/> b<g ref="#rlong"/>edað</orig><reg>underbredað</reg></choice><g ref="comma"/> <g ref="#ond"/> mid</l>
+          <l n="9"><lb facs="#WoE_line_104r_09" xml:id="WoE_lb_104r_09" n="9"/>oþ<g ref="#rlong"/>an h<g ref="#ydot"/> <g ref="#wynn"/><g ref="#rlong"/>eoð<g ref="middot"/> him<g ref="fullstop"/></l>
+          <l n="10"><lb facs="#WoE_line_104r_10" xml:id="WoE_lb_104r_10" n="10"/><g ref="#capb"/>eoð <choice><orig>þaea<g ref="#rlong"/>an</orig><reg>þa earan</reg></choice> <g ref="#slong"/><g ref="#wynn"/>iðe</l>
+          <l n="11"><lb facs="#WoE_line_104r_11" xml:id="WoE_lb_104r_11" n="11"/>leoh<g ref="#tins"/>e <g ref="#ond"/> h<g ref="#ydot"/> beoð <g ref="#slong"/><g ref="#wynn"/>a</l>
+          <l n="12"><lb facs="#WoE_line_104r_12" xml:id="WoE_lb_104r_12" n="12"/>on lichoman <g ref="#slong"/><g ref="#wynn"/>a <choice><orig>h<g ref="#wynn"/>i</orig><reg>hwi-</reg></choice></l>
+          <l n="13"><lb facs="#WoE_line_104r_13" xml:id="WoE_lb_104r_13" n="13"/><g ref="#tins"/>e <g ref="#slong"/><g ref="#wynn"/>a meolc<g ref="fullstop"/> <choice><orig><g ref="#gins"/><g ref="#ydot"/>f</orig><reg>Gyf</reg></choice> h<g ref="#ydot"/></l>
+          <l n="14"><lb facs="#WoE_line_104r_14" xml:id="WoE_lb_104r_14" n="14"/>h<g ref="#wynn"/>ilcne mannan on</l>
+          <l n="15"><lb facs="#WoE_line_104r_15" xml:id="WoE_lb_104r_15" n="15"/>þæm lande <g ref="#gins"/>e<g ref="#slong"/>eoð</l>
+          <l n="16"><lb facs="#WoE_line_104r_16" xml:id="WoE_lb_104r_16" n="16"/>oðþe on<g ref="#gins"/><g ref="#ydot"/><g ref="#tins"/>að<g ref="comma"/> þonne n<g ref="#ydot"/>mað h<g ref="#ydot"/> h<g ref="#ydot"/><g ref="#rlong"/>a <choice><orig>ea<g ref="#rlong"/></orig><corr>ear[an]</corr></choice></l>
+          <l n="17"><lb facs="#WoE_line_104r_17" xml:id="WoE_lb_104r_17" n="17"/>him on hand <g ref="#ond"/> fleoð <g ref="#slong"/><g ref="#wynn"/><g ref="#ydot"/>ðe<g ref="middotcomma"/> <g ref="#slong"/><g ref="#wynn"/>a <choice><orig>h<g ref="#rlong"/>e</orig><corr>hr[ædlice]</corr></choice> <g ref="#slong"/><g ref="#wynn"/>a i<g ref="#slong"/></l>
+          <l n="18"><lb facs="#WoE_line_104r_18" xml:id="WoE_lb_104r_18" n="18"/><g ref="#wynn"/>en þæ<g ref="#tins"/> h<g ref="#ydot"/> fleo<g ref="#gins"/>en<g ref="fullstop"/></l>
+          <l n="19"><lb facs="#WoE_line_104r_19" xml:id="WoE_lb_104r_19" n="19"/>Ðonne <choice><orig>i<g ref="#slong"/>sum</orig><reg>is sum</reg></choice> ealond on þæm beoð men acende</l>
+          <l n="20"><lb facs="#WoE_line_104r_20" xml:id="WoE_lb_104r_20" n="20"/>þa<g ref="#rlong"/>a ea<g ref="#gins"/>an <g ref="#slong"/>cinaþ <g ref="#slong"/><g ref="#wynn"/>a leoh<g ref="#tins"/>e <g ref="#slong"/><g ref="#wynn"/>a man</l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.13.jpg" n="Folio 104v" xml:id="WoE_13"/>
+          <l n="1"><lb facs="#WoE_line_104v_01" xml:id="WoE_lb_104v_01" n="1"/>micel blace<g ref="#rlong"/>n <choice><orig>on ele</orig><reg>onele</reg></choice></l>
+          <l n="2"><lb facs="#WoE_line_104v_02" xml:id="WoE_lb_104v_02" n="2"/>þeo<g ref="#slong"/><g ref="#tins"/><g ref="#rlong"/>e nih<g ref="#tins"/>e<g ref="fullstop"/></l>
+          <l n="3"><lb facs="#WoE_line_104v_03" xml:id="WoE_lb_104v_03" n="3"/><choice><orig>ne</orig><corr>[Ðon]ne</corr></choice> i<g ref="#slong"/> <choice><orig>sū</orig><reg>sum</reg></choice> ealond <g ref="#that"/> i<g ref="#slong"/></l>
+          <l n="4"><lb facs="#WoE_line_104v_04" xml:id="WoE_lb_104v_04" n="4"/><choice><orig>e<g ref="#slong"/></orig><corr>[þæ]s</corr></choice> læ<g ref="#slong"/>san <choice><orig>mil <g ref="#gins"/>e <g ref="#tins"/>ele<g ref="#slong"/></orig><reg>milgeteles</reg></choice></l>
+          <l n="5"><lb facs="#WoE_line_104v_05" xml:id="WoE_lb_104v_05" n="5"/><choice><orig>þe<g ref="#slong"/><g ref="#tins"/>adia</orig><reg>þe stadia</reg></choice> ha<g ref="#tins"/><g ref="#tins"/>e <choice><orig>onlen</orig><reg>on len-</reg></choice></l>
+          <l n="6"><lb facs="#WoE_line_104v_06" xml:id="WoE_lb_104v_06" n="6"/><g ref="#gins"/>e <g ref="#ond"/> on b<g ref="#rlong"/>æde ·ccc<g ref="#middotspacerx"/><g ref="#ond"/> <g ref="#addmiddot"/>lx·<g ref="comma"/></l>
+          <l n="7"><lb facs="#WoE_line_104v_07" xml:id="WoE_lb_104v_07" n="7"/><choice><orig></orig><corr>[and þæs]</corr></choice> miclan þe leone<g ref="#slong"/></l>
+          <l n="8"><lb facs="#WoE_line_104v_08" xml:id="WoE_lb_104v_08" n="8"/><choice><orig></orig><corr>[hatte]</corr></choice> ·cx·<g ref="fullstop"/> <g ref="#capthorn"/>æ<g ref="#rlong"/> <g ref="#wynn"/>æ<g ref="#slong"/> <g ref="#gins"/>e<g ref="#tins"/><g ref="#ydot"/>mb<g ref="#rlong"/>o <choice><orig>onbele<g ref="#slong"/></orig><reg>on Beles</reg></choice> da<g ref="#gins"/>um</l>
+          <l n="9"><lb facs="#WoE_line_104v_09" xml:id="WoE_lb_104v_09" n="9"/><choice><orig>obe<g ref="#slong"/></orig><corr>[I]obes</corr></choice> <g ref="#tins"/>emple of i<g ref="#slong"/>e<g ref="#rlong"/>num <choice><orig><g ref="#gins"/>e<g ref="#wynn"/>o<g ref="#rlong"/>cū</orig><reg>geworcum</reg></choice> <g ref="middot"/> <g ref="#ond"/> of <g ref="#gins"/>læ<g ref="#slong"/></l>
+          <l n="10"><lb facs="#WoE_line_104v_10" xml:id="WoE_lb_104v_10" n="10"/><choice><orig>e<g ref="#gins"/>o<g ref="#tins"/>um</orig><corr>[g]egotum</corr></choice><g ref="fullstop"/> <choice><orig><g ref="#ond"/></orig><reg>Ond</reg></choice> on þæ<g ref="#rlong"/>e</l>
+          <l n="11"><lb facs="#WoE_line_104v_11" xml:id="WoE_lb_104v_11" n="11"/>ilcan <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e i<g ref="#slong"/> æ<g ref="#tins"/></l>
+          <l n="12"><lb facs="#WoE_line_104v_12" xml:id="WoE_lb_104v_12" n="12"/>sunnan up<g ref="#gins"/>an<g ref="#gins"/>e</l>
+          <l n="13"><lb facs="#WoE_line_104v_13" xml:id="WoE_lb_104v_13" n="13"/>se<g ref="#tins"/>l quie<g ref="#tins"/>u<g ref="#slong"/> þæ<g ref="#slong"/></l>
+          <l n="14"><lb facs="#WoE_line_104v_14" xml:id="WoE_lb_104v_14" n="14"/>s<g ref="#tins"/>ille<g ref="#slong"/><g ref="#tins"/>an bi<g ref="#slong"/>ceope<g ref="#slong"/></l>
+          <l n="15"><lb facs="#WoE_line_104v_15" xml:id="WoE_lb_104v_15" n="15"/><g ref="#slong"/>e nænine oþe<g ref="#rlong"/>ne</l>
+          <l n="16"><lb facs="#WoE_line_104v_16" xml:id="WoE_lb_104v_16" n="16"/><choice><orig><g ref="#tins"/>e</orig><corr>[me]te</corr></choice> <choice><orig>neþi<g ref="#gins"/>e</orig><reg>ne þige</reg></choice> bu<g ref="#tins"/>on</l>
+          <l n="17"><lb facs="#WoE_line_104v_17" xml:id="WoE_lb_104v_17" n="17"/><choice><orig><g ref="#slong"/>æ o<g ref="#slong"/><g ref="#tins"/><g ref="#rlong"/>um</orig><reg>sæostrum</reg></choice><g ref="comma"/> <g ref="#ond"/> be þam</l>
+          <l n="18"><lb facs="#WoE_line_104v_18" xml:id="WoE_lb_104v_18" n="18"/>he lifede<g ref="fullstop"/></l>
+          <l n="19"><lb facs="#WoE_line_104v_19" xml:id="WoE_lb_104v_19" n="19"/>Ðonne i<g ref="#slong"/> <g ref="#gins"/><g ref="#ydot"/>lden <g ref="#wynn"/>in<g ref="#gins"/>ea<g ref="#rlong"/>d æ<g ref="#tins"/> <g ref="#slong"/>unnan up<g ref="#gins"/>on<g ref="#gins"/>e</l>
+          <l n="20"><lb facs="#WoE_line_104v_20" xml:id="WoE_lb_104v_20" n="20"/><g ref="#slong"/>e hafað be<g ref="#rlong"/><g ref="#gins"/>ean <choice><orig>hund <g ref="#tins"/>eon<g ref="#tins"/>i<g ref="#gins"/>e<g ref="#slong"/></orig><reg>hundteontiges</reg></choice> <choice><orig>fo<g ref="#tins"/></orig><reg>fot-</reg></choice></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.14.jpg" n="Folio 105r" xml:id="WoE_14"/>
+          <l n="1"><lb facs="#WoE_line_105r_01" xml:id="WoE_lb_105r_01" n="1"/>mæla <choice><orig><g ref="#ond"/>fif<g ref="#tins"/>i<g ref="#gins"/>e<g ref="#slong"/></orig><reg>ond fiftiges</reg></choice><g ref="fullstop"/> <choice><orig>ofþæm</orig><reg>Of þæm</reg></choice></l>
+          <l n="2"><lb facs="#WoE_line_105r_02" xml:id="WoE_lb_105r_02" n="2"/>be<g ref="#rlong"/><g ref="#gins"/>ean beoð cende</l>
+          <l n="3"><lb facs="#WoE_line_105r_03" xml:id="WoE_lb_105r_03" n="3"/><choice><orig>sa<g ref="#rlong"/>a<g ref="#gins"/>im ma<g ref="#slong"/></orig><reg>saragimmas</reg></choice><g ref="fullstop"/></l>
+          <l n="4"><lb facs="#WoE_line_105r_04" xml:id="WoE_lb_105r_04" n="4"/>Ðonne is oþe<g ref="#rlong"/> <g ref="#rlong"/>ice on</l>
+          <l n="5"><lb facs="#WoE_line_105r_05" xml:id="WoE_lb_105r_05" n="5"/><g ref="#capb"/>abilonia landum<g ref="middot"/> þæ<g ref="#rlong"/></l>
+          <l n="6"><lb facs="#WoE_line_105r_06" xml:id="WoE_lb_105r_06" n="6"/>i<g ref="#slong"/> <g ref="#slong"/>eo mæ<g ref="#slong"/><g ref="#tins"/>e dun <choice><orig>be</orig><reg>be-</reg></choice></l>
+          <l n="7"><lb facs="#WoE_line_105r_07" xml:id="WoE_lb_105r_07" n="7"/><g ref="#tins"/><g ref="#wynn"/>ih <g ref="#capm"/>eda dune <g ref="#ond"/> <g ref="#capa"/><g ref="#rlong"/>moenia<g ref="fullstop"/><g ref="middot"/> <g ref="#caps"/>eo i<g ref="#slong"/> <choice><orig>eal<g ref="#rlong"/></orig><corr>ealr[a]</corr></choice></l>
+          <l n="8"><lb facs="#WoE_line_105r_08" xml:id="WoE_lb_105r_08" n="8"/>duna mæ<g ref="#slong"/>t <g ref="#ond"/> h<g ref="#ydot"/>h<g ref="#slong"/><g ref="#tins"/><g ref="fullstop"/><g ref="middot"/> <note>T] Þar syndon gedefelice menn þa habbað him</note><g ref="#tins"/>o <choice><orig><g ref="#ydot"/>ne dome</orig><reg>cynedome</reg></choice> þone <choice><orig><g ref="#rlong"/>e</orig><corr>Re[a]-</corr></choice></l>
+          <l n="9"><lb facs="#WoE_line_105r_09" xml:id="WoE_lb_105r_09" n="9"/>dan <choice><orig><g ref="#slong"/>æ</orig><reg>Sæ</reg></choice> <g ref="#ond"/> <g ref="#tins"/>o <choice><orig>an <g ref="#wynn"/>alde</orig><reg>anwalde</reg></choice><g ref="fullstop"/> <g ref="#capthorn"/>æ<g ref="#rlong"/> beoð cende <choice><orig><g ref="#slong"/>a<g ref="#rlong"/>o<g ref="#gins"/></orig><corr>sarog[immas]</corr></choice><g ref="fullstop"/></l>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <lb/>
+          <l n="10"><lb facs="#WoE_line_105r_10" xml:id="WoE_lb_105r_10" n="10"/>Ymb þa<g ref="#slong"/> <g ref="#slong"/><g ref="#tins"/>o<g ref="#wynn"/>e beoð <g ref="#wynn"/>if acenned<g ref="comma"/> <g ref="middot"/> þa habbað</l>
+          <l n="11"><lb facs="#WoE_line_105r_11" xml:id="WoE_lb_105r_11" n="11"/>bea<g ref="#rlong"/>das s<g ref="#wynn"/>a <g ref="#slong"/>ide oð hy<g ref="#rlong"/>a b<g ref="#rlong"/>eo<g ref="#slong"/><g ref="#tins"/><g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> ho<g ref="#rlong"/><g ref="#slong"/>e<g ref="#slong"/></l>
+          <l n="12"><lb facs="#WoE_line_105r_12" xml:id="WoE_lb_105r_12" n="12"/>hyda h<g ref="#ydot"/> habbað him <g ref="#tins"/>o h<g ref="#rlong"/>æ<g ref="#gins"/>le <g ref="#gins"/>edon<g ref="fullstop"/> <choice><orig>hundic</orig><reg>Hundic-</reg></choice></l>
+          <l n="13"><lb facs="#WoE_line_105r_13" xml:id="WoE_lb_105r_13" n="13"/><g ref="#gins"/>ean <g ref="#slong"/><g ref="#wynn"/>yða<g ref="#slong"/>t <choice><orig>nem e</orig><corr>nem[d]e</corr></choice><g ref="middotcomma"/> <g ref="#ond"/> f<g ref="#rlong"/>om <g ref="#tins"/>i<g ref="#gins"/><g ref="#rlong"/>a<g ref="#slong"/> <g ref="#ond"/> leon <g ref="middot"/></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.15.jpg" n="Folio 105v" xml:id="WoE_15"/>
+          <l n="1"><lb facs="#WoE_line_105v_01" xml:id="WoE_lb_105v_01" n="1"/><choice><orig>xa<g ref="#slong"/></orig><corr>[and lo]xas</corr></choice> <g ref="middot"/> <g ref="that"/> h<g ref="#ydot"/> fedað þæ<g ref="#tins"/></l>
+          <l n="2"><lb facs="#WoE_line_105v_02" xml:id="WoE_lb_105v_02" n="2"/><g ref="#slong"/><g ref="#ydot"/>ndon <choice><orig>þacenes<g ref="#tins"/>an</orig><reg>þa cenestan</reg></choice></l>
+          <l n="3"><lb facs="#WoE_line_105v_03" xml:id="WoE_lb_105v_03" n="3"/><choice><orig>eo<g ref="#rlong"/></orig><corr>[d]eor</corr></choice><g ref="fullstop"/> <choice><orig><g ref="#ond"/></orig><reg>And</reg></choice> eal<g ref="#rlong"/>a þa<g ref="#rlong"/>a</l>
+          <l n="4"><lb facs="#WoE_line_105v_04" xml:id="WoE_lb_105v_04" n="4"/><choice><orig>deo<g ref="#rlong"/>a</orig><corr>[wil]deora</corr></choice> c<g ref="#ydot"/>n<g ref="comma"/> þe on</l>
+          <l n="5"><lb facs="#WoE_line_105v_05" xml:id="WoE_lb_105v_05" n="5"/><choice><orig>e<g ref="#rlong"/>e</orig><corr>[þæ]re</corr></choice> dune acende</l>
+          <l n="6"><lb facs="#WoE_line_105v_06" xml:id="WoE_lb_105v_06" n="6"/>beoð<g ref="comma"/> mid heo<g ref="#rlong"/>a <choice><orig><g ref="#slong"/>cin</orig><reg>scin-</reg></choice></l>
+          <l n="7"><lb facs="#WoE_line_105v_07" xml:id="WoE_lb_105v_07" n="7"/><g ref="that"/> h<g ref="#ydot"/> <g ref="#tins"/>o hun<g ref="#tins"/>iaþ<g ref="fullstop"/><g ref="middot"/></l>
+          <l n="8"><lb facs="#WoE_line_105v_08" xml:id="WoE_lb_105v_08" n="8"/><choice><orig>ne</orig><corr>[Ðon]ne</corr></choice> <g ref="#slong"/><g ref="#ydot"/>ndan oþe<g ref="#rlong"/>e</l>
+          <l n="9"><lb facs="#WoE_line_105v_09" xml:id="WoE_lb_105v_09" n="9"/><choice><orig></orig><corr>[wif]</corr></choice> þa habbað eofe<g ref="#rlong"/>e<g ref="#slong"/></l>
+          <l n="10"><lb facs="#WoE_line_105v_10" xml:id="WoE_lb_105v_10" n="10"/><g ref="#tins"/>uxa<g ref="#slong"/> <g ref="#ond"/> feax oð helan</l>
+          <l n="11"><lb facs="#WoE_line_105v_11" xml:id="WoE_lb_105v_11" n="11"/><g ref="#slong"/>ide<g ref="comma"/> <g ref="middot"/> <g ref="#ond"/> oxan <g ref="#tins"/>æ<g ref="#gins"/>l on</l>
+          <l n="12"><lb facs="#WoE_line_105v_12" xml:id="WoE_lb_105v_12" n="12"/><choice><orig>en dunum</orig><corr>[l]endunum</corr></choice><g ref="fullstop"/>  <g ref="#capthorn"/>a <g ref="#wynn"/>if <g ref="#slong"/><g ref="#ydot"/>ndon <choice><orig>þ<g ref="#rlong"/>y<g ref="#tins"/> <g ref="#tins"/>yne</orig><reg>þryttyne</reg></choice> fo<g ref="#tins"/>a lan<g ref="#gins"/>e</l>
+          <l n="13"><lb facs="#WoE_line_105v_13" xml:id="WoE_lb_105v_13" n="13"/><g ref="#ond"/> hy<g ref="#rlong"/>a lic bið on <choice><orig>ma<g ref="#rlong"/></orig><reg>mar-</reg></choice></l>
+          <l n="14"><lb facs="#WoE_line_105v_14" xml:id="WoE_lb_105v_14" n="14"/>mo<g ref="#rlong"/><g ref="#slong"/><g ref="#tins"/>ane<g ref="#slong"/><g ref="middot"/> hi<g ref="#wynn"/>ne<g ref="#slong"/><g ref="#slong"/>e<g ref="fullstop"/></l>
+          <l n="15"><lb facs="#WoE_line_105v_15" xml:id="WoE_lb_105v_15" n="15"/><choice><orig></orig><corr>[And hy]</corr></choice> habbað olfendan</l>
+          <l n="16"><lb facs="#WoE_line_105v_16" xml:id="WoE_lb_105v_16" n="16"/><choice><orig></orig><corr>[fet]</corr></choice> <g ref="#ond"/> eo<g ref="#slong"/>ele<g ref="#slong"/> <g ref="#tins"/>eð<g ref="fullstop"/> <g ref="#capo"/>f</l>
+          <l n="17"><lb facs="#WoE_line_105v_17" xml:id="WoE_lb_105v_17" n="17"/>h<g ref="#ydot"/><g ref="#rlong"/>a micelne<g ref="#slong"/><g ref="#slong"/>e h<g ref="#ydot"/></l>
+          <l n="18"><lb facs="#WoE_line_105v_18" xml:id="WoE_lb_105v_18" n="18"/><choice><orig><g ref="#gins"/>e fylde</orig><reg>gefylde</reg></choice> <g ref="#wynn"/>æ<g ref="#rlong"/>on <choice><orig>f<g ref="#rlong"/>ō</orig><reg>from</reg></choice></l>
+          <l n="19"><lb facs="#WoE_line_105v_19" xml:id="WoE_lb_105v_19" n="19"/>þæm miclan <choice><orig>macedo</orig><reg>macendo-</reg></choice></l>
+          <l n="20"><lb facs="#WoE_line_105v_20" xml:id="WoE_lb_105v_20" n="20"/>ni<g ref="#slong"/>can <g ref="#capa"/>lexand<g ref="#rlong"/>e<g ref="fullstop"/></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.16.jpg" n="Folio 106r" xml:id="WoE_16"/>
+          <l n="1"><lb facs="#WoE_line_106r_01" xml:id="WoE_lb_106r_01" n="1"/><g ref="#capthorn"/>a c<g ref="#wynn"/>ealde he hy þa he h<g ref="#ydot"/> lifiende <choice><orig>ofe<g ref="#rlong"/> fon</orig><reg>oferfon</reg></choice></l>
+          <l n="2"><lb facs="#WoE_line_106r_02" xml:id="WoE_lb_106r_02" n="2"/><choice><orig>nemehte</orig><reg>ne mehte</reg></choice><g ref="comma"/> fo<g ref="#rlong"/> þon h<g ref="#ydot"/> <g ref="#slong"/><g ref="#ydot"/>ndon æ<g ref="#wynn"/>i<g ref="#slong"/>ce on</l>
+          <l n="3"><lb facs="#WoE_line_106r_03" xml:id="WoE_lb_106r_03" n="3"/>lichoman <g ref="#ond"/> un<g ref="#wynn"/>eo<g ref="#rlong"/>þe<g ref="fullstop"/><g ref="middot"/></l>
+          <l n="4"><lb facs="#WoE_line_106r_04" xml:id="WoE_lb_106r_04" n="4"/><choice><orig>Beþæm</orig><reg>Be þæm</reg></choice> <g ref="#gins"/>a<g ref="#rlong"/><g ref="#slong"/>ec<g ref="#gins"/>e <choice><orig><g ref="#wynn"/>ildeo</orig><reg>wildeo-</reg></choice></l>
+          <l n="5"><lb facs="#WoE_line_106r_05" xml:id="WoE_lb_106r_05" n="5"/><g ref="#rlong"/>a c<g ref="#ydot"/>n þa ha<g ref="#tins"/><g ref="#tins"/>on <choice><orig>ca<g ref="#tins"/>i</orig><reg>Cati-</reg></choice></l>
+          <l n="6"><lb facs="#WoE_line_106r_06" xml:id="WoE_lb_106r_06" n="6"/>no<g ref="#slong"/> þæ<g ref="#rlong"/> <g ref="#slong"/>yndon <choice><orig>f<g ref="#rlong"/>ea</orig><reg>frea-</reg></choice></l>
+          <l n="7"><lb facs="#WoE_line_106r_07" xml:id="WoE_lb_106r_07" n="7"/><g ref="#wynn"/>li<g ref="#tins"/>i deo<g ref="#rlong"/><g ref="fullstop"/> <choice><orig><g ref="#ond"/></orig><reg>Ond</reg></choice> þæ<g ref="#rlong"/> <g ref="#slong"/><g ref="#ydot"/>ndon</l>
+          <l n="8"><lb facs="#WoE_line_106r_08" xml:id="WoE_lb_106r_08" n="8"/>men þe be <choice><orig>h<g ref="#rlong"/>ea<g ref="#wynn"/>ū</orig><reg>hreawum</reg></choice> <choice><orig>flæ<g ref="#slong"/></orig><reg>flæs-</reg></choice></l>
+          <l n="9"><lb facs="#WoE_line_106r_09" xml:id="WoE_lb_106r_09" n="9"/>ce<g ref="middot"/> <g ref="#ond"/> be hunie h<g ref="#ydot"/> lifiað<g ref="fullstop"/></l>
+          <l n="10"><lb facs="#WoE_line_106r_10" xml:id="WoE_lb_106r_10" n="10"/>On þæm <g ref="#wynn"/><g ref="#ydot"/>n<g ref="#slong"/><g ref="#tins"/><g ref="#rlong"/>an dæle</l>
+          <l n="11"><lb facs="#WoE_line_106r_11" xml:id="WoE_lb_106r_11" n="11"/>þæ<g ref="#slong"/> <g ref="#rlong"/>ice<g ref="#slong"/> þe þa deo<g ref="#rlong"/> on beoð <g ref="#capc"/>a<g ref="#tins"/>ino<g ref="#slong"/><g ref="comma"/> <g ref="#ond"/> þæ<g ref="#rlong"/> beoð</l>
+          <l n="12"><lb facs="#WoE_line_106r_12" xml:id="WoE_lb_106r_12" n="12"/><choice><orig><g ref="#gins"/>æ<g ref="#slong"/><g ref="#tins"/> liþende</orig><reg>gæstliþende</reg></choice> men<g ref="middotcomma"/></l>
+          <l n="13"><lb facs="#WoE_line_106r_13" xml:id="WoE_lb_106r_13" n="13"/>c<g ref="#ydot"/>nin<g ref="#gins"/>a<g ref="#slong"/> þa habbaþ</l>
+          <l n="14"><lb facs="#WoE_line_106r_14" xml:id="WoE_lb_106r_14" n="14"/>unde<g ref="#rlong"/> <choice><orig>moni<g ref="#gins"/> fealde</orig><reg>monigfealde</reg></choice></l>
+          <l n="15"><lb facs="#WoE_line_106r_15" xml:id="WoE_lb_106r_15" n="15"/><choice><orig>leod ha<g ref="#tins"/>an</orig><reg>leodhatan</reg></choice><g ref="fullstop"/><g ref="middot"/> <g ref="#caph"/>eo<g ref="#rlong"/>a</l>
+          <l n="16"><lb facs="#WoE_line_106r_16" xml:id="WoE_lb_106r_16" n="16"/><choice><orig>land <g ref="#gins"/>e mæ<g ref="#rlong"/>a</orig><reg>landgemæra</reg></choice> buaþ</l>
+          <l n="17"><lb facs="#WoE_line_106r_17" xml:id="WoE_lb_106r_17" n="17"/>neah þæm <g ref="#gins"/>a<g ref="#rlong"/><g ref="#slong"/>ec<g ref="#gins"/>e<g ref="comma"/></l>
+          <l n="18"><lb facs="#WoE_line_106r_18" xml:id="WoE_lb_106r_18" n="18"/>þanon f<g ref="#rlong"/>æm þæm</l>
+          <l n="19"><lb facs="#WoE_line_106r_19" xml:id="WoE_lb_106r_19" n="19"/><g ref="#wynn"/><g ref="#ydot"/>n<g ref="#slong"/><g ref="#tins"/><g ref="#rlong"/>an dæle <choice><orig><g ref="#slong"/><g ref="#ydot"/>n</orig><reg>syn-</reg></choice></l>
+          <l n="20"><lb facs="#WoE_line_106r_20" xml:id="WoE_lb_106r_20" n="20"/>don fela <g ref="middot"/>cynin<g ref="#gins"/>a<g ref="fullstop"/> <g ref="middot"/></l>
+          </div>
+          <div>
+          <pb facs="data/images/single/Fol.17.jpg" n="Folio 106v" xml:id="WoE_17"/>
+          <l n="1"><lb facs="#WoE_line_106v_01" xml:id="WoE_lb_106v_01" n="1"/><choice><orig>an c<g ref="#ydot"/>n</orig><corr>[Ðis m]ancyn</corr></choice> lyfað fela</l>
+          <l n="2"><lb facs="#WoE_line_106v_02" xml:id="WoE_lb_106v_02" n="2"/><choice><orig>a<g ref="#rlong"/>a</orig><corr>[ge]ara</corr></choice><g ref="comma"/> <g ref="#ond"/> h<g ref="#ydot"/> <g ref="#slong"/><g ref="#ydot"/>ndon</l>
+          <l n="3"><lb facs="#WoE_line_106v_03" xml:id="WoE_lb_106v_03" n="3"/><choice><orig>mfulle</orig><corr>[fre]mfulle</corr></choice> men<g ref="fullstop"/> <choice><orig><g ref="#gins"/>if</orig><reg>Gif</reg></choice></l>
+          <l n="4"><lb facs="#WoE_line_106v_04" xml:id="WoE_lb_106v_04" n="4"/><choice><orig>ilc</orig><corr>[hw]ilc</corr></choice> mon <choice><orig>hī</orig><reg>him</reg></choice> <g ref="#tins"/>o c<g ref="#ydot"/>mð</l>
+          <l n="5"><lb facs="#WoE_line_106v_05" xml:id="WoE_lb_106v_05" n="5"/><choice><orig>n</orig><corr>[þo]n</corr></choice> <g ref="#gins"/>ifað h<g ref="#ydot"/> him <g ref="#wynn"/>if</l>
+          <l n="6"><lb facs="#WoE_line_106v_06" xml:id="WoE_lb_106v_06" n="6"/>h<g ref="#ydot"/> hine on<g ref="#wynn"/>e<g ref="#gins"/> <choice><orig>læ</orig><reg>læ-</reg></choice></l>
+          <l n="7"><lb facs="#WoE_line_106v_07" xml:id="WoE_lb_106v_07" n="7"/><choice><orig>en</orig><corr>[t]en</corr></choice><g ref="fullstop"/><g ref="middot"/> <g ref="#caps"/>e <choice><orig>ce doni<g ref="#slong"/>ca</orig><corr>[ma]cedonisca</corr></choice></l>
+          <l n="8"><lb facs="#WoE_line_106v_08" xml:id="WoE_lb_106v_08" n="8"/><choice><orig>exande<g ref="#rlong"/></orig><corr>[Al]exander</corr></choice><g ref="comma"/> þa he him</l>
+          <l n="9"><lb facs="#WoE_line_106v_09" xml:id="WoE_lb_106v_09" n="9"/><choice><orig></orig><corr>[to]</corr></choice> com<g ref="comma"/> þa <g ref="#wynn"/>æ<g ref="#slong"/> he <choice><orig><g ref="#wynn"/>un</orig><reg>wun-</reg></choice></l>
+          <l n="10"><lb facs="#WoE_line_106v_10" xml:id="WoE_lb_106v_10" n="10"/>d<g ref="#rlong"/>ende h<g ref="#ydot"/><g ref="#rlong"/>a menni<g ref="#slong"/>cne<g ref="#slong"/><g ref="#slong"/>e<g ref="comma"/> ne <g ref="#wynn"/>olde he</l>
+          <l n="11"><lb facs="#WoE_line_106v_11" xml:id="WoE_lb_106v_11" n="11"/><choice><orig>hic<g ref="#wynn"/>ellan</orig><reg>hic cwellan</reg></choice> ne him nan lað on<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#WoE_line_106v_12" xml:id="WoE_lb_106v_12" n="12"/>Ðonne <g ref="#slong"/><g ref="#ydot"/>ndon <choice><orig><g ref="#tins"/><g ref="#rlong"/>eo<g ref="#wynn"/> c<g ref="#ydot"/>n</orig><reg>treowcyn</reg></choice></l>
+          <l n="13"><lb facs="#WoE_line_106v_13" xml:id="WoE_lb_106v_13" n="13"/>on þæm þa <choice><orig>deo<g ref="#rlong"/> <g ref="#wynn"/><g ref="#ydot"/><g ref="#rlong"/>þ<g ref="#ydot"/><g ref="#slong"/><g ref="#tins"/>an</orig><reg>deorwyrþystan</reg></choice></l>
+          <l n="14"><lb facs="#WoE_line_106v_14" xml:id="WoE_lb_106v_14" n="14"/>s<g ref="#tins"/>ana<g ref="#slong"/> s<g ref="#ydot"/>nd <choice><orig>ofacende</orig><reg>of acende</reg></choice><g ref="middot"/><g ref="comma"/></l>
+          <l n="15"><lb facs="#WoE_line_106v_15" xml:id="WoE_lb_106v_15" n="15"/><choice><orig>onon</orig><corr>[þ]onon</corr></choice> hy <g ref="#gins"/><g ref="#rlong"/>o<g ref="#wynn"/>að<g ref="fullstop"/><g ref="middot"/></l>
+          <l n="16"><lb facs="#WoE_line_106v_16" xml:id="WoE_lb_106v_16" n="16"/><choice><orig><g ref="#rlong"/></orig><corr>[Ðæ]r</corr></choice> <choice><orig>mon c<g ref="#ydot"/>n</orig><reg>moncyn</reg></choice> i<g ref="#slong"/> seondon</l>
+          <l n="17"><lb facs="#WoE_line_106v_17" xml:id="WoE_lb_106v_17" n="17"/><g ref="#slong"/><g ref="#wynn"/>ea<g ref="#rlong"/><g ref="#tins"/>e<g ref="#slong"/> h<g ref="#ydot"/>i<g ref="#wynn"/>e<g ref="#slong"/> on <choice><orig>o <g ref="#slong"/>yne</orig><corr>o[n]syne</corr></choice><g ref="comma"/></l>
+          <l n="18"><lb facs="#WoE_line_106v_18" xml:id="WoE_lb_106v_18" n="18"/><choice><orig>þam on</orig><reg>þa mon</reg></choice> ha<g ref="#tins"/>eð</l>
+          <l n="20"><lb facs="#WoE_line_106v_19" xml:id="WoE_lb_106v_19" n="19"/><choice><orig><g ref="#slong"/>i<g ref="#gins"/>el <g ref="#wynn"/>a<g ref="#rlong"/>a</orig><reg>sigelwara</reg></choice><g ref="fullstop"/><g ref="middot"/></l>
+          </div>
+       </body>
+    </text>
+</TEI>
